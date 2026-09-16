@@ -1,6 +1,6 @@
 /* ==========================================================================
    Belayneh Endalamaw Dejene - Professional Portfolio
-   Tab-Based Single-Page Architecture with Poppins Typography
+   Clean Multi-Page Tab Architecture with Poppins Typography
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap');
@@ -64,35 +64,7 @@ main {
   flex: 1;
 }
 
-/* ==========================================================================
-   TAB ARCHITECTURE: Only active tab is visible!
-   ========================================================================== */
-.tab-content {
-  display: none !important;
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.35s ease, transform 0.35s ease;
-}
-
-.tab-content.active {
-  display: block !important;
-  opacity: 1;
-  transform: translateY(0);
-  animation: fadeInTab 0.4s ease forwards;
-}
-
-@keyframes fadeInTab {
-  0% {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Navbar */
+/* Navbar Styles */
 .navbar {
   position: fixed;
   width: 100%;
@@ -108,7 +80,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.9rem 2rem;
+  padding: 0.85rem 2rem;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -131,7 +103,7 @@ main {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 1.4rem;
+  gap: 1.25rem;
   align-items: center;
 }
 
@@ -144,7 +116,6 @@ main {
   position: relative;
   padding: 0.35rem 0.65rem;
   border-radius: 6px;
-  cursor: pointer;
 }
 
 .nav-links a:hover {
@@ -192,10 +163,10 @@ main {
   color: var(--text-color);
 }
 
-/* Sections & Headings */
-section {
+/* Page Container & Headings */
+.page-container {
   padding: 6.5rem 1.5rem 4rem;
-  min-height: calc(100vh - 140px);
+  min-height: calc(100vh - 120px);
 }
 
 .section-title {
@@ -219,17 +190,17 @@ section {
   border-radius: 2px;
 }
 
-/* Home Tab */
-#home.tab-content.active {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
+/* Home Section */
+.home {
   position: relative;
   background: var(--hero-gradient);
   color: #fff;
   text-align: center;
   padding: 0 1.5rem;
   min-height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 65px;
 }
 
@@ -288,12 +259,35 @@ section {
   line-height: 1.7;
 }
 
-.home-cta-buttons {
-  display: flex;
-  justify-content: center;
+.home-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
-  margin-bottom: 2.25rem;
-  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+}
+
+.home-tab-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+
+.home-tab-card:hover {
+  background: var(--primary-color);
+  transform: translateY(-3px);
+  border-color: var(--primary-color);
 }
 
 .social-icons {
@@ -325,10 +319,6 @@ section {
 }
 
 /* About Section */
-.about {
-  background: var(--card-bg);
-}
-
 .about-content {
   display: flex;
   align-items: center;
@@ -425,10 +415,6 @@ section {
 }
 
 /* Skills Section */
-.skills {
-  background: var(--bg-color);
-}
-
 .skills-intro {
   max-width: 760px;
   margin: 0 auto 2.5rem;
@@ -553,10 +539,6 @@ section {
 }
 
 /* Education Timeline */
-.education {
-  background: var(--card-bg);
-}
-
 .timeline {
   position: relative;
   max-width: 900px;
@@ -592,7 +574,7 @@ section {
 }
 
 .timeline-content {
-  background: var(--bg-color);
+  background: var(--card-bg);
   padding: 1.75rem;
   border-radius: var(--radius);
   box-shadow: var(--box-shadow);
@@ -627,10 +609,6 @@ section {
 }
 
 /* Experience & Leadership Table Styles */
-.experience, .leadership {
-  background: var(--bg-color);
-}
-
 .experience-table {
   width: 100%;
   max-width: 1150px;
@@ -681,10 +659,6 @@ section {
 }
 
 /* Publications Section */
-.publications {
-  background: var(--card-bg);
-}
-
 .publications-grid {
   display: flex;
   flex-direction: column;
@@ -694,7 +668,7 @@ section {
 }
 
 .publication-card {
-  background: var(--bg-color);
+  background: var(--card-bg);
   border-radius: var(--radius);
   padding: 2rem;
   box-shadow: var(--box-shadow);
@@ -779,23 +753,7 @@ section {
   color: #fff;
 }
 
-.btn-outline {
-  background: transparent;
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
-}
-
-.btn-outline:hover {
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-  transform: translateY(-2px);
-}
-
 /* Projects Section */
-.projects {
-  background: var(--bg-color);
-}
-
 .projects-grid {
   display: flex;
   flex-direction: column;
@@ -875,10 +833,6 @@ section {
 }
 
 /* Certificates Section */
-.certificates {
-  background: var(--card-bg);
-}
-
 .certificates-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -888,7 +842,7 @@ section {
 }
 
 .certificate-card {
-  background: var(--bg-color);
+  background: var(--card-bg);
   border-radius: var(--radius);
   padding: 1.75rem;
   box-shadow: var(--box-shadow);
@@ -947,10 +901,6 @@ section {
 }
 
 /* Contact Section */
-.contact {
-  background: var(--bg-color);
-}
-
 .contact-container {
   max-width: 650px;
   margin: 0 auto;

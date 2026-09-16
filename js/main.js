@@ -1,96 +1,14 @@
 /**
  * Belayneh Endalamaw Dejene Portfolio Scripts
- * Tab-Based Single-Page Navigation Controller
  */
 document.addEventListener('DOMContentLoaded', () => {
-  const tabLinks = document.querySelectorAll('.nav-tab-link, [data-switch-tab]');
-  const tabSections = document.querySelectorAll('.tab-content');
+  // Mobile Hamburger Toggle
   const hamburger = document.getElementById('hamburger');
   const navLinksContainer = document.getElementById('nav-links');
 
-  // Function to switch active tab
-  function switchTab(targetTabId) {
-    if (!targetTabId) return;
-    targetTabId = targetTabId.replace('#', '');
-
-    const targetSection = document.getElementById(targetTabId);
-    if (!targetSection) return;
-
-    // 1. Hide all tab contents
-    tabSections.forEach(sec => {
-      sec.classList.remove('active');
-    });
-
-    // 2. Show only target tab content
-    targetSection.classList.add('active');
-
-    // 3. Update active state on nav links
-    document.querySelectorAll('.nav-tab-link').forEach(link => {
-      const linkTab = link.getAttribute('data-tab') || link.getAttribute('href').replace('#', '');
-      if (linkTab === targetTabId) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
-
-    // 4. Update browser URL hash without reload
-    history.replaceState(null, null, '#' + targetTabId);
-
-    // 5. Scroll smoothly to top of page
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    // 6. Close mobile menu if open
-    if (navLinksContainer && navLinksContainer.classList.contains('active')) {
-      navLinksContainer.classList.remove('active');
-    }
-  }
-
-  // Click listeners for all tab triggers
-  tabLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = link.getAttribute('data-tab') || link.getAttribute('data-switch-tab') || link.getAttribute('href');
-      switchTab(targetId);
-    });
-  });
-
-  // Handle URL hash on initial page load
-  const initialHash = window.location.hash ? window.location.hash.replace('#', '') : 'home';
-  if (document.getElementById(initialHash)) {
-    switchTab(initialHash);
-  } else {
-    switchTab('home');
-  }
-
-  // Handle browser back/forward buttons
-  window.addEventListener('popstate', () => {
-    const hash = window.location.hash ? window.location.hash.replace('#', '') : 'home';
-    if (document.getElementById(hash)) {
-      switchTab(hash);
-    }
-  });
-
-  // Mobile Hamburger Toggle
   if (hamburger && navLinksContainer) {
     hamburger.addEventListener('click', () => {
       navLinksContainer.classList.toggle('active');
-    });
-  }
-
-  // Expandable About Section (See More / See Less)
-  const readMoreBtn = document.getElementById('read-more-btn');
-  const expandableContent = document.getElementById('expandable-content');
-
-  if (readMoreBtn && expandableContent) {
-    readMoreBtn.addEventListener('click', () => {
-      if (expandableContent.style.display === 'block') {
-        expandableContent.style.display = 'none';
-        readMoreBtn.textContent = 'See More';
-      } else {
-        expandableContent.style.display = 'block';
-        readMoreBtn.textContent = 'See Less';
-      }
     });
   }
 
@@ -115,17 +33,32 @@ document.addEventListener('DOMContentLoaded', () => {
     themeBtn.innerHTML = theme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
   }
 
-  // Typing Animation in Hero
-  const phrases = [
-    "Data Scientist & AI Researcher",
-    "PhD Candidate in Data Science",
-    "Clinical Decision Support & Explainable AI Specialist",
-    "Co-Investigator, March of Dimes Research Grant",
-    "Research Fellow @ Armauer Hansen Research Institute"
-  ];
+  // Expandable About Section (See More / See Less)
+  const readMoreBtn = document.getElementById('read-more-btn');
+  const expandableContent = document.getElementById('expandable-content');
 
+  if (readMoreBtn && expandableContent) {
+    readMoreBtn.addEventListener('click', () => {
+      if (expandableContent.style.display === 'block') {
+        expandableContent.style.display = 'none';
+        readMoreBtn.textContent = 'See More';
+      } else {
+        expandableContent.style.display = 'block';
+        readMoreBtn.textContent = 'See Less';
+      }
+    });
+  }
+
+  // Typing Animation in Hero
   const typedEl = document.getElementById('typed-text');
   if (typedEl) {
+    const phrases = [
+      "Data Scientist & AI Researcher",
+      "PhD Candidate in Data Science",
+      "Clinical Decision Support & Explainable AI Specialist",
+      "Co-Investigator, March of Dimes Research Grant",
+      "Research Fellow @ Armauer Hansen Research Institute"
+    ];
     let pIdx = 0, cIdx = 0, isDeleting = false;
     function typeEffect() {
       const curr = phrases[pIdx];
