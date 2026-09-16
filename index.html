@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Belayneh Endalamaw Dejene | Data Scientist, AI Researcher & PhD Fellow</title>
+  <meta name="title" content="Belayneh Endalamaw Dejene | Data Scientist, AI Researcher & PhD Fellow">
+  <meta name="description" content="Portfolio of Belayneh Endalamaw Dejene — Data Scientist, AI Researcher, PhD Candidate at Bahir Dar University, Fellow at Armauer Hansen Research Institute (AHRI), and Co-Investigator in Healthcare Analytics & Explainable AI.">
+  <meta name="keywords" content="Belayneh Endalamaw Dejene, Data Scientist, AI Researcher, Healthcare AI, Explainable AI, XAI, Machine Learning, Deep Learning, Preterm Birth, HIV ARTist, Clinical Decision Support, Bahir Dar University, AHRI, University of Gondar, Ethiopia">
+  <meta name="author" content="Belayneh Endalamaw Dejene">
+  
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://belzman.github.io/My_portifolio/">
+  <meta property="og:title" content="Belayneh Endalamaw Dejene | Data Scientist & AI Researcher">
+  <meta property="og:description" content="Explore research, peer-reviewed publications, live Explainable AI demos, and clinical intelligence platforms by Belayneh Endalamaw Dejene.">
+  <meta property="og:image" content="assets/images/graphical-abstract.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://belzman.github.io/My_portifolio/">
+  <meta property="twitter:title" content="Belayneh Endalamaw Dejene | Data Scientist & AI Researcher">
+  <meta property="twitter:description" content="Explore research, peer-reviewed publications, live Explainable AI demos, and clinical intelligence platforms.">
+  <meta property="twitter:image" content="assets/images/graphical-abstract.png">
+
+  <!-- JSON-LD Structured Data for Google Scholar and Knowledge Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Belayneh Endalamaw Dejene",
+    "jobTitle": "Data Scientist & AI Researcher",
+    "affiliation": [
+      {
+        "@type": "Organization",
+        "name": "Armauer Hansen Research Institute (AHRI)"
+      },
+      {
+        "@type": "Organization",
+        "name": "University of Gondar"
+      }
+    ],
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Bahir Dar University"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "University of Gondar"
+      }
+    ],
+    "url": "https://belzman.github.io/My_portifolio/",
+    "sameAs": [
+      "https://github.com/belzman",
+      "https://scholar.google.com",
+      "https://orcid.org"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Explainable AI (XAI)",
+      "Clinical Decision Support Systems",
+      "Healthcare Analytics",
+      "Natural Language Processing",
+      "Digital Twins"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Neural Constellation Canvas Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Sticky Glassmorphic Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="gradient-text">Belayneh</span>
+        <span class="brand-badge">PhD / AI Fellow</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#publications" class="nav-link">Publications</a></li>
+          <li><a href="#ai-playground" class="nav-link">AI Playground</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#timeline" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm" style="display: none; @media(min-width: 640px){display: inline-flex;}">
+          <i class="fas fa-paper-plane"></i> Connect
+        </a>
+        <button id="hamburger-btn" class="hamburger" aria-label="Open mobile menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <div class="hero-badge-container">
+            <span class="hero-badge live">
+              <span class="pulse-dot"></span> Available for Research & AI Advisory
+            </span>
+            <span class="hero-badge">
+              <i class="fas fa-microscope"></i> AHRI / DSWB Fellow
+            </span>
+          </div>
+
+          <h1 class="hero-name">
+            Belayneh Endalamaw <span class="gradient-text">Dejene</span>
+          </h1>
+
+          <div class="hero-title-typing">
+            <span id="hero-typed-text"></span><span style="animation: pulse 1s infinite;">|</span>
+          </div>
+
+          <p class="hero-bio">
+            Bridging foundational artificial intelligence with clinical healthcare translation. Specializing in 
+            <strong>Explainable AI (XAI)</strong>, predictive clinical decision support systems (CDSS), 
+            and digital twin simulations for maternal health and infectious diseases across sub-Saharan Africa.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#publications" class="btn btn-primary">
+              <i class="fas fa-book-reader"></i> Explore Publications (9+)
+            </a>
+            <a href="#ai-playground" class="btn btn-secondary">
+              <i class="fas fa-laptop-code"></i> Live AI Simulator
+            </a>
+            <a href="mailto:belzman2011@gmail.com" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i> Email Belayneh
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/belzman" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="Google Scholar">
+              <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a href="mailto:belzman2011@gmail.com" class="social-icon" title="Personal Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+251915306380" class="social-icon" title="Phone / Telegram">
+              <i class="fas fa-phone"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card-glow"></div>
+          
+          <div class="profile-image-container">
+            <div class="avatar-placeholder">
+              <div class="avatar-initials">BED</div>
+              <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.25rem;">Belayneh E. Dejene</h3>
+              <p style="color: var(--accent-primary); font-size: 0.85rem; font-weight: 600;">Data Scientist & AI Researcher</p>
+              <div style="margin-top: 1rem; padding: 0.5rem 1rem; border-radius: 9999px; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.25); font-size: 0.75rem; color: var(--text-secondary);">
+                <i class="fas fa-map-marker-alt" style="color: var(--accent-primary);"></i> Addis Ababa & Gondar, Ethiopia
+              </div>
+            </div>
+
+            <!-- Floating Quick Badges -->
+            <div class="floating-stat-badge top-right">
+              <div class="stat-num">9+</div>
+              <div class="stat-label">Peer-Reviewed Papers</div>
+            </div>
+            
+            <div class="floating-stat-badge bottom-left">
+              <div class="stat-num">Co-Inv</div>
+              <div class="stat-label">March of Dimes Grant</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Animated Statistics Banner -->
+    <section id="stats-banner" class="stats-banner">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-counter" data-target="9" data-suffix="+">0</div>
+          <div class="stat-item-desc">High-Impact Journal & IEEE Papers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-counter" data-target="100" data-suffix="K+">$0</div>
+          <div class="stat-item-desc">Research Grant Funding Contributed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-counter" data-target="7" data-suffix="+">0</div>
+          <div class="stat-item-desc">Production AI & Health Systems Built</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-counter" data-target="6" data-suffix="+">0</div>
+          <div class="stat-item-desc">Years Academic Teaching & Research</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <span class="section-tag"><i class="fas fa-user"></i> Professional Profile</span>
+        <h2 class="section-title">Bridging Clinical Science with Modern Artificial Intelligence</h2>
+        <p class="section-subtitle">
+          An accomplished researcher, data scientist, and academic with end-to-end expertise in predictive modeling, 
+          explainable machine learning, and translating complex mathematical models into clinical and community products.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              <strong>Belayneh Endalamaw Dejene</strong> holds a BSc in Information Science and an MSc in Data Science and Analytics 
+              from the University of Gondar, Ethiopia, and is currently pursuing his <strong>PhD in Data Science at Bahir Dar University</strong>. 
+              His research centers on the intersection of machine learning, healthcare analytics, and transparent algorithmic decision-making.
+            </p>
+            <p>
+              He serves as a <strong>Data Scientist and Analyst at Armauer Hansen Research Institute (AHRI)</strong> under the prestigious 
+              <em>Data Science Without Borders (DSWB)</em> initiative (funded by APHRC), and is a Lecturer and Researcher at the 
+              University of Gondar College of Informatics. Belayneh previously served as a Data Analyst at the Ethiopian Commodity Exchange (ECX), 
+              analyzing market volatilities and economic drivers.
+            </p>
+            <p>
+              As <strong>Co-Investigator</strong> on the <em>March of Dimes Discovery Research Grant</em>, Belayneh leads machine learning development 
+              and dynamic risk-stratification models for clinical decision-support systems aimed at preventing spontaneous preterm birth in routine antenatal care.
+            </p>
+
+            <div class="affiliations-grid">
+              <div class="affiliation-card">
+                <i class="fas fa-hospital-user affiliation-icon"></i>
+                <div>
+                  <h4 class="affiliation-title">Data Scientist & Analyst (DSWB Fellow)</h4>
+                  <div class="affiliation-org">Armauer Hansen Research Institute (AHRI) &bull; 2025 - Present</div>
+                  <p class="affiliation-desc">Lead data scientist under the Data Science Without Borders initiative analyzing regional clinical surveillance cohorts and predictive models.</p>
+                </div>
+              </div>
+
+              <div class="affiliation-card">
+                <i class="fas fa-university affiliation-icon"></i>
+                <div>
+                  <h4 class="affiliation-title">Lecturer & Academic Researcher</h4>
+                  <div class="affiliation-org">University of Gondar, College of Informatics &bull; 2018 - Present</div>
+                  <p class="affiliation-desc">Instruct undergraduate and graduate curricula in algorithms, programming, databases, and applied machine learning.</p>
+                </div>
+              </div>
+
+              <div class="affiliation-card">
+                <i class="fas fa-award affiliation-icon"></i>
+                <div>
+                  <h4 class="affiliation-title">Co-Investigator, March of Dimes Discovery Grant</h4>
+                  <div class="affiliation-org">Discovery Research Grant &bull; Preterm Birth Prevention</div>
+                  <p class="affiliation-desc">Leading AI architecture, feature engineering, and dynamic stratification integration for maternal antenatal clinical workflows.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual">
+            <div class="research-feature-card">
+              <img src="assets/images/graphical-abstract.png" alt="Belayneh Endalamaw Dejene Research Graphical Abstract" class="research-feature-img">
+              <div class="research-feature-body">
+                <span class="section-tag" style="margin-bottom: 0.5rem;"><i class="fas fa-chart-line"></i> Methodological Pipeline</span>
+                <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Calibrated Prediction & Interpretability</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                  End-to-end framework integrating data pre-processing, multi-source feature extraction, ensemble classifiers, and explainable AI (SHAP & LIME) to yield transparent, clinician-ready insights.
+                </p>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                  <span class="pub-tag">#ExplainableAI</span>
+                  <span class="pub-tag">#ClinicalAI</span>
+                  <span class="pub-tag">#EnsembleLearning</span>
+                  <span class="pub-tag">#GlobalHealth</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Hub Section -->
+    <section id="publications" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <span class="section-tag"><i class="fas fa-scroll"></i> Scholarly Output</span>
+        <h2 class="section-title">Peer-Reviewed International Publications</h2>
+        <p class="section-subtitle">
+          Rigorous scientific contributions across premier journals including <em>HIV Medicine</em>, <em>BMC Public Health</em>, 
+          <em>BMC Infectious Diseases</em>, <em>BMC Medical Informatics</em>, and <em>IEEE</em>. Search by title, author, or filter by research domain.
+        </p>
+
+        <!-- Search & Filters -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+          <div class="filter-controls" style="margin-bottom: 0;">
+            <button class="filter-btn pub-filter-btn active" data-filter="all">All (9)</button>
+            <button class="filter-btn pub-filter-btn" data-filter="clinical-ai">Clinical Decision Support</button>
+            <button class="filter-btn pub-filter-btn" data-filter="xai">Explainable AI (XAI)</button>
+            <button class="filter-btn pub-filter-btn" data-filter="maternal-health">Maternal & Child Health</button>
+            <button class="filter-btn pub-filter-btn" data-filter="systematic-review">Systematic Reviews</button>
+            <button class="filter-btn pub-filter-btn" data-filter="conferences">Conferences & IEEE</button>
+          </div>
+
+          <div class="search-box" style="margin-bottom: 0;">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="pub-search-input" class="search-input" placeholder="Search papers, DOIs, keywords...">
+          </div>
+        </div>
+
+        <!-- Render Target -->
+        <div class="publications-list" id="publications-list">
+          <!-- Dynamically populated by js/publications.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive AI Playground / XAI Simulator -->
+    <section id="ai-playground" class="section">
+      <div class="container">
+        <span class="section-tag"><i class="fas fa-brain"></i> Interactive Research Demonstration</span>
+        <h2 class="section-title">Explainable AI (XAI) & Clinical Risk Simulator</h2>
+        <p class="section-subtitle">
+          Experience Belayneh's explainable modeling paradigm live in your browser. Adjust patient clinical parameters to calculate calibrated 
+          maternal-fetal risk probabilities and visualize local SHAP-style feature attributions in real time.
+        </p>
+
+        <div class="ai-playground-wrapper">
+          <div class="ai-playground-grid">
+            <!-- Left Column: Sliders -->
+            <div class="controls-column">
+              <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <i class="fas fa-sliders-h" style="color: var(--accent-primary);"></i> Input Clinical Parameters
+              </h3>
+
+              <div class="control-group">
+                <div class="control-label-row">
+                  <span>Maternal Hemoglobin (Hb)</span>
+                  <span id="val-hb" class="control-val">10.5 g/dL</span>
+                </div>
+                <input type="range" id="sim-hb" class="range-slider" min="6.0" max="16.0" step="0.1" value="10.5">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">&lt; 11 g/dL indicates anemia risk threshold</span>
+              </div>
+
+              <div class="control-group">
+                <div class="control-label-row">
+                  <span>Systolic Blood Pressure (BP)</span>
+                  <span id="val-bp" class="control-val">128 mmHg</span>
+                </div>
+                <input type="range" id="sim-bp" class="range-slider" min="90" max="190" step="1" value="128">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">&gt; 140 mmHg flags hypertensive preeclampsia</span>
+              </div>
+
+              <div class="control-group">
+                <div class="control-label-row">
+                  <span>Gestational Age</span>
+                  <span id="val-ga" class="control-val">35 wks</span>
+                </div>
+                <input type="range" id="sim-ga" class="range-slider" min="24" max="42" step="1" value="35">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">&lt; 37 weeks is classified as preterm delivery</span>
+              </div>
+
+              <div class="control-group">
+                <div class="control-label-row">
+                  <span>CD4 Cell Count / Biomarker</span>
+                  <span id="val-cd4" class="control-val">420 cells/uL</span>
+                </div>
+                <input type="range" id="sim-cd4" class="range-slider" min="50" max="1000" step="10" value="420">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">&lt; 350 indicates immunosuppression</span>
+              </div>
+
+              <div class="control-group">
+                <div class="control-label-row">
+                  <span>Prior Obstetric Complications</span>
+                </div>
+                <select id="sim-comp" class="form-input" style="padding: 0.6rem 1rem;">
+                  <option value="no">No prior recorded complications</option>
+                  <option value="yes">Yes (History of preterm delivery or preeclampsia)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Right Column: Gauge & SHAP Waterfall -->
+            <div class="output-column">
+              <div class="model-output-panel">
+                <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.05em;">
+                  Calibrated Ensemble Risk Probability
+                </span>
+
+                <div id="gauge-circle" class="gauge-circle">
+                  <div id="gauge-score" class="gauge-val">46%</div>
+                  <div id="gauge-category" class="gauge-label">Moderate Risk</div>
+                </div>
+
+                <!-- SHAP Feature Contributions -->
+                <div class="shap-chart-container">
+                  <div class="shap-chart-title">
+                    <span>Local Feature Attributions (SHAP)</span>
+                    <span style="font-size: 0.75rem; color: var(--text-muted);">
+                      <span style="color: var(--danger); font-weight: 700;">■ High Risk</span> | 
+                      <span style="color: var(--success); font-weight: 700;">■ Protective</span>
+                    </span>
+                  </div>
+
+                  <div class="shap-bar-row">
+                    <div class="shap-bar-label">
+                      <span>Maternal Hemoglobin Level</span>
+                      <span id="shap-hb-val" class="control-val">+0.30</span>
+                    </div>
+                    <div class="shap-bar-track">
+                      <div id="shap-hb-fill" class="shap-bar-fill positive" style="width: 35%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="shap-bar-row">
+                    <div class="shap-bar-label">
+                      <span>Systolic Blood Pressure</span>
+                      <span id="shap-bp-val" class="control-val">+0.16</span>
+                    </div>
+                    <div class="shap-bar-track">
+                      <div id="shap-bp-fill" class="shap-bar-fill positive" style="width: 25%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="shap-bar-row">
+                    <div class="shap-bar-label">
+                      <span>Gestational Age</span>
+                      <span id="shap-ga-val" class="control-val">+0.40</span>
+                    </div>
+                    <div class="shap-bar-track">
+                      <div id="shap-ga-fill" class="shap-bar-fill positive" style="width: 45%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="shap-bar-row">
+                    <div class="shap-bar-label">
+                      <span>CD4 Biomarker Count</span>
+                      <span id="shap-cd4-val" class="control-val">-0.35</span>
+                    </div>
+                    <div class="shap-bar-track">
+                      <div id="shap-cd4-fill" class="shap-bar-fill negative" style="width: 38%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="shap-bar-row">
+                    <div class="shap-bar-label">
+                      <span>Obstetric History Determinant</span>
+                      <span id="shap-comp-val" class="control-val">-0.15</span>
+                    </div>
+                    <div class="shap-bar-track">
+                      <div id="shap-comp-fill" class="shap-bar-fill negative" style="width: 18%;"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 1.25rem; font-style: italic;">
+                  *Demonstrates transparent clinical explainability: clinicians can inspect exactly which physiological biomarkers drive the algorithmic recommendation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <span class="section-tag"><i class="fas fa-cubes"></i> Applied Systems</span>
+        <h2 class="section-title">Software Engineering & AI Products</h2>
+        <p class="section-subtitle">
+          Belayneh designs and engineers complete production web applications and pipelines, seamlessly integrating machine learning 
+          models into reactive frontends and robust backends for health and scientific communities.
+        </p>
+
+        <div class="filter-controls">
+          <button class="filter-btn proj-filter-btn active" data-filter="all">All Systems</button>
+          <button class="filter-btn proj-filter-btn" data-filter="clinical-ai">Clinical AI & RAG</button>
+          <button class="filter-btn proj-filter-btn" data-filter="climate-health">Climate & Geospatial</button>
+          <button class="filter-btn proj-filter-btn" data-filter="data-eng">Data Engineering & OMOP</button>
+          <button class="filter-btn proj-filter-btn" data-filter="xai">Explainable AI</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamically populated by js/projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Timeline & Grants Section -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <span class="section-tag"><i class="fas fa-history"></i> Milestones</span>
+        <h2 class="section-title">Research Leadership & Appointments</h2>
+        <p class="section-subtitle">
+          Demonstrated track record spanning international research grants, academic university appointments, 
+          and applied governmental data analysis.
+        </p>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2025 - Present</div>
+            <h3 class="timeline-role">Data Scientist & Analyst (DSWB Fellow)</h3>
+            <div class="timeline-org">Armauer Hansen Research Institute (AHRI) &bull; APHRC Data Science Without Borders</div>
+            <p class="timeline-desc">
+              Conducting advanced machine learning and statistical modeling on high-dimensional clinical and epidemiological surveillance datasets. 
+              Developing predictive algorithms for infectious diseases and maternal-child health indicators across international cohorts.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 - Present</div>
+            <h3 class="timeline-role">Co-Investigator | AI & Machine Learning Lead</h3>
+            <div class="timeline-org">March of Dimes Discovery Research Grant &bull; Preterm Birth Clinical Trial</div>
+            <p class="timeline-desc">
+              Principal architect of the dynamic risk-stratification machine learning algorithm. Responsible for end-to-end data pipelines, 
+              prospective model validation, and integrating interpretable AI outputs into the T-H2P clinical decision support system for routine antenatal care.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022 - Present</div>
+            <h3 class="timeline-role">PhD Candidate in Data Science</h3>
+            <div class="timeline-org">Bahir Dar University, Institute of Technology</div>
+            <p class="timeline-desc">
+              Doctoral dissertation research focused on explainable artificial intelligence, digital twin simulations, and federated learning 
+              architectures for chronic disease outcomes in resource-constrained health systems.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2018 - Present</div>
+            <h3 class="timeline-role">Lecturer & Researcher in Informatics</h3>
+            <div class="timeline-org">University of Gondar, College of Informatics</div>
+            <p class="timeline-desc">
+              Delivering high-level university courses in programming, data structures, algorithm design, and database architectures. 
+              Supervising undergraduate theses, spearheading curriculum modernization, and serving on academic faculty committees.
+            </p>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Prior Appointment</div>
+            <h3 class="timeline-role">Data Analyst</h3>
+            <div class="timeline-org">Ethiopian Commodity Exchange (ECX)</div>
+            <p class="timeline-desc">
+              Executed quantitative econometric analyses investigating temporal volatility and price determinants across national agricultural commodities, 
+              delivering analytical briefings for policy stakeholders.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <span class="section-tag"><i class="fas fa-code"></i> Technical Stack</span>
+        <h2 class="section-title">Core Competencies & Toolchain</h2>
+        <p class="section-subtitle">
+          Extensive hands-on proficiency with computational frameworks, clinical ontology standards, and enterprise engineering tools.
+        </p>
+
+        <div class="skills-container">
+          <!-- Skill Cat 1 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+              <h3 class="skill-cat-title">AI & Deep Learning</h3>
+            </div>
+            <div class="skill-items-list">
+              <div>
+                <div class="skill-row"><span>PyTorch / TensorFlow</span><span>92%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 92%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row"><span>Scikit-Learn / XGBoost / LightGBM</span><span>95%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 95%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row"><span>Computer Vision & Transformers</span><span>88%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 88%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Cat 2 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fas fa-eye"></i></div>
+              <h3 class="skill-cat-title">Explainable AI (XAI)</h3>
+            </div>
+            <div class="skill-items-list">
+              <div>
+                <div class="skill-row"><span>SHAP (TreeSHAP & KernelSHAP)</span><span>95%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 95%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row"><span>LIME & Partial Dependence (PDP)</span><span>90%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 90%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row"><span>Model Calibration & Fairness Audit</span><span>92%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 92%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Cat 3 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fas fa-comments"></i></div>
+              <h3 class="skill-cat-title">Generative AI & RAG</h3>
+            </div>
+            <div class="skill-items-list">
+              <div>
+                <div class="skill-row"><span>Google Gemini 2.0 / OpenAI APIs</span><span>92%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 92%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row"><span>ChromaDB / Vector Embeddings</span><span>88%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 88%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row"><span>Multilingual NLP (Amharic & English)</span><span>94%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 94%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Cat 4 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
+              <h3 class="skill-cat-title">Data Engineering & Ops</h3>
+            </div>
+            <div class="skill-items-list">
+              <div>
+                <div class="skill-row"><span>PostgreSQL / SQL Alchemy / SQLite</span><span>94%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 94%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row"><span>OMOP CDM / Healthcare Interop</span><span>88%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 88%;"></div></div>
+              </div>
+              <div>
+                <div class="skill-row"><span>Docker / Git / Linux / Flask / React</span><span>90%</span></div>
+                <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 90%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates & Honors Section -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <span class="section-tag"><i class="fas fa-certificate"></i> Verified Credentials</span>
+        <h2 class="section-title">Certifications, Honors & Scientific Community</h2>
+        <p class="section-subtitle">
+          Continuous professional development and active engagement with top international artificial intelligence consortiums.
+        </p>
+
+        <div class="certificates-grid">
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-award"></i></div>
+            <div>
+              <h4 class="cert-name">Deep Learning Indaba Recognition</h4>
+              <div class="cert-issuer">Deep Learning Indaba Consortium &bull; 2023</div>
+              <p class="cert-field">Pan-African AI innovation and contribution to machine learning for healthcare.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+            <div>
+              <h4 class="cert-name">Black in AI Workshop @ NeurIPS</h4>
+              <div class="cert-issuer">NeurIPS &bull; Global Co-Located Workshop</div>
+              <p class="cert-field">Presented and participated in global machine learning advancements and diversity initiatives.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-brain"></i></div>
+            <div>
+              <h4 class="cert-name">Advanced Machine Learning & AI Specializations</h4>
+              <div class="cert-issuer">IBM & Columbia University</div>
+              <p class="cert-field">Deep learning architectures, neural representations, and scalable AI workflows.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-globe-africa"></i></div>
+            <div>
+              <h4 class="cert-name">Data Science Africa (DSA) Fellow</h4>
+              <div class="cert-issuer">Data Science Africa</div>
+              <p class="cert-field">Participated in intensive summer schools covering IoT, Bayesian modeling, and end-to-end data systems.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+            <div>
+              <h4 class="cert-name">Antimicrobial Drug Resistance (AMR) Taskforce</h4>
+              <div class="cert-issuer">Data Science Network & DSWB</div>
+              <p class="cert-field">Applying machine learning to clinical antimicrobial susceptibility records.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <h4 class="cert-name">MSc in Data Science & Analytics (Distinction)</h4>
+              <div class="cert-issuer">University of Gondar &bull; 2021</div>
+              <p class="cert-field">Thesis on ensemble clinical prediction models for maternal anemia and perinatal survival.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <span class="section-tag"><i class="fas fa-envelope"></i> Get In Touch</span>
+        <h2 class="section-title">Let's Collaborate on Research & AI Innovation</h2>
+        <p class="section-subtitle">
+          Interested in joint research grants, academic collaborations, AI consulting, or speaking engagements? Reach out directly.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info-col">
+            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 1rem;">Direct Contact Channels</h3>
+            <p style="color: var(--text-secondary); line-height: 1.7;">
+              Belayneh welcomes inquiries from research institutions, healthcare organizations, universities, and international grant consortia.
+            </p>
+
+            <div class="contact-info-list">
+              <a href="mailto:belzman2011@gmail.com" class="contact-info-item">
+                <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">PRIMARY EMAIL</div>
+                  <div style="font-weight: 700;">belzman2011@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="mailto:Belaynehendalamaw2008@gmail.com" class="contact-info-item">
+                <div class="contact-info-icon"><i class="fas fa-envelope-open-text"></i></div>
+                <div>
+                  <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">ALTERNATIVE EMAIL</div>
+                  <div style="font-weight: 700;">Belaynehendalamaw2008@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="mailto:Belayneh.endalamaw@uog.edu.et" class="contact-info-item">
+                <div class="contact-info-icon"><i class="fas fa-university"></i></div>
+                <div>
+                  <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">INSTITUTIONAL EMAIL</div>
+                  <div style="font-weight: 700;">Belayneh.endalamaw@uog.edu.et</div>
+                </div>
+              </a>
+
+              <a href="tel:+251915306380" class="contact-info-item">
+                <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+                <div>
+                  <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">MOBILE / TELEGRAM</div>
+                  <div style="font-weight: 700;">+251 915 306 380</div>
+                </div>
+              </a>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">LOCATION</div>
+                  <div style="font-weight: 700;">Addis Ababa & Gondar, Ethiopia</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-col">
+            <form id="portfolio-contact-form" class="contact-form">
+              <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 1.5rem;">Send a Direct Message</h3>
+
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="Dr. Jane Doe / Prof. John Smith" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="colleague@institution.edu" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Inquiry Purpose / Subject *</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Research Collaboration / Grant / Speaking" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message Details *</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Describe your proposed collaboration, project, or inquiry..." required></textarea>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i> Transmit Message
+              </button>
+
+              <div id="form-status-msg" style="display: none;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BibTeX Citation Modal -->
+  <div id="bibtex-modal" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeBibtexModal()">&times;</button>
+      <h3 style="font-size: 1.25rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
+        <i class="fas fa-quote-right" style="color: var(--accent-primary);"></i> BibTeX Citation
+      </h3>
+      <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">
+        Copy this BibTeX entry into your LaTeX bibliography or reference manager (Zotero, Mendeley, EndNote).
+      </p>
+
+      <pre id="bibtex-code-content" class="bibtex-code"></pre>
+
+      <div style="display: flex; justify-content: flex-end; gap: 0.75rem;">
+        <button id="copy-bibtex-btn" onclick="copyBibtexToClipboard()" class="btn btn-primary btn-sm">
+          <i class="fas fa-copy"></i> Copy to Clipboard
+        </button>
+        <button onclick="closeBibtexModal()" class="btn btn-secondary btn-sm">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#hero" class="brand-logo" style="margin-bottom: 1rem;">
+          <span class="gradient-text">Belayneh Endalamaw Dejene</span>
+        </a>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; max-width: 420px; line-height: 1.7;">
+          Data Scientist, AI Researcher, and PhD Candidate pioneering Explainable AI and Clinical Decision Support across sub-Saharan Africa.
+        </p>
+      </div>
+
+      <div>
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem;">Quick Links</h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem;">
+          <li><a href="#about" style="color: var(--text-secondary); text-decoration: none;">About Belayneh</a></li>
+          <li><a href="#publications" style="color: var(--text-secondary); text-decoration: none;">Publications (9)</a></li>
+          <li><a href="#ai-playground" style="color: var(--text-secondary); text-decoration: none;">Live AI Playground</a></li>
+          <li><a href="#projects" style="color: var(--text-secondary); text-decoration: none;">Flagship Systems</a></li>
+          <li><a href="#timeline" style="color: var(--text-secondary); text-decoration: none;">Experience & Grants</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem;">Repositories & Network</h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem;">
+          <li><a href="https://github.com/belzman" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); text-decoration: none;"><i class="fab fa-github"></i> GitHub (@belzman)</a></li>
+          <li><a href="https://github.com/belzman/ARTist" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); text-decoration: none;"><i class="fas fa-heartbeat"></i> ARTist Platform</a></li>
+          <li><a href="https://github.com/belzman/My_portifolio" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); text-decoration: none;"><i class="fas fa-code-branch"></i> Portfolio Source</a></li>
+          <li><a href="mailto:belzman2011@gmail.com" style="color: var(--text-secondary); text-decoration: none;"><i class="fas fa-envelope"></i> Email Inquiries</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Belayneh Endalamaw Dejene. All Rights Reserved. Built with modern web standards and deployed on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/publications.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/ai-simulator.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
