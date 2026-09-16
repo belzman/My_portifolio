@@ -21,20 +21,20 @@
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">
-                <a href="#home">Belayneh <span>Endalamaw</span></a>
+                <a href="#home" class="nav-tab-link" data-tab="home">Belayneh <span>Endalamaw</span></a>
             </div>
             
             <ul class="nav-links" id="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#leadership">Leadership</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-tab-link active" data-tab="home">Home</a></li>
+                <li><a href="#about" class="nav-tab-link" data-tab="about">About</a></li>
+                <li><a href="#skills" class="nav-tab-link" data-tab="skills">Skills</a></li>
+                <li><a href="#education" class="nav-tab-link" data-tab="education">Education</a></li>
+                <li><a href="#experience" class="nav-tab-link" data-tab="experience">Experience</a></li>
+                <li><a href="#publications" class="nav-tab-link" data-tab="publications">Publications</a></li>
+                <li><a href="#leadership" class="nav-tab-link" data-tab="leadership">Leadership</a></li>
+                <li><a href="#projects" class="nav-tab-link" data-tab="projects">Projects</a></li>
+                <li><a href="#certificates" class="nav-tab-link" data-tab="certificates">Certificates</a></li>
+                <li><a href="#contact" class="nav-tab-link" data-tab="contact">Contact</a></li>
             </ul>
 
             <div class="nav-actions">
@@ -48,819 +48,836 @@
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="home">
-        <div class="home-overlay"></div>
-        <div class="home-content">
-            <div class="home-badge">
-                <i class="fas fa-microscope"></i> Data Scientist & AI Researcher
-            </div>
-            <h1>Hi, I'm Belayneh Endalamaw Dejene</h1>
-            <h3><span id="typed-text"></span></h3>
-            <p>Passionate about creating innovative AI solutions, explainable predictive models, and clinical decision support systems for healthcare and society.</p>
-            
-            <div class="social-icons">
-                <a href="https://github.com/belzman" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                <a href="mailto:belzman2011@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="tel:+251915306380" title="Phone"><i class="fas fa-phone"></i></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-img">
-                <img src="assets/images/profile.png" alt="Belayneh Endalamaw Dejene Profile Picture">
-            </div>
-            <div class="about-text">
-                <div class="text-content">
-                    <p class="about-description">
-                        Belayneh Endalamaw Dejene is an accomplished data scientist, artificial intelligence researcher, and university lecturer with an extensive background in information science, predictive modeling, machine learning, and healthcare analytics. Belayneh began his academic journey by obtaining a Bachelor's degree in Information Science from the University of Gondar, Ethiopia, in 2018. He then completed a Master of Science in Data Science and Analytics at the same university in 2021 with distinction.
-                    </p>
-
-                    <div class="expandable-content" id="expandable-content">
-                        <p>
-                            Currently, Belayneh is pursuing his <strong>PhD in Data Science at Bahir Dar University's Institute of Technology</strong> (since 2022). He is also serving as a <strong>Data Scientist and Analyst at the Armauer Hansen Research Institute (AHRI)</strong> under the <em>Data Science Without Borders (DSWB)</em> project, supported by the African Population and Health Research Center (APHRC).
-                        </p>
-                        
-                        <p>
-                            Belayneh serves as <strong>Co-Investigator and Lead AI / Machine Learning Engineer</strong> on the prestigious <em>March of Dimes Discovery Research Grant</em> titled <em>"AI-Enhanced Dynamic Risk Stratification and Risk-Responsive Antenatal Care to Prevent Spontaneous Preterm Birth in Ethiopia: A Cluster Randomized Controlled Trial."</em> In this grant, he leads data engineering, predictive feature development, and model integration into the clinical decision-support system.
-                        </p>
-                        
-                        <p>
-                            During his tenure as a Lecturer and Researcher at the University of Gondar College of Informatics, Belayneh has taught undergraduate courses in programming, data structures, algorithms, databases, and applied machine learning, while serving on academic committees, curriculum modernization, and technology transfer initiatives. He previously served as a Data Analyst at the Ethiopian Commodity Exchange (ECX), conducting quantitative price volatility analyses.
-                        </p>
-                        
-                        <p>
-                            Belayneh has published <strong>9 peer-reviewed research papers</strong> in international journals including <em>HIV Medicine</em>, <em>BMC Public Health</em>, <em>BMC Infectious Diseases</em>, <em>BMC Pregnancy and Childbirth</em>, <em>Italian Journal of Pediatrics</em>, <em>BMC Medical Informatics and Decision Making</em>, and <em>IEEE NIGERCON</em>.
-                        </p>
-                        
-                        <p>
-                            <strong>Research areas:</strong> Artificial Intelligence, Machine Learning, Deep Learning, Explainable & Interpretable AI (XAI), Clinical Decision Support Systems, Healthcare Analytics, Natural Language Processing, Computer Vision, and Digital Twin Simulation for people living with HIV.
-                        </p>
-                    </div>
+    <main>
+        <!-- Home Section (Tab) -->
+        <section id="home" class="tab-content active home">
+            <div class="home-overlay"></div>
+            <div class="home-content">
+                <div class="home-badge">
+                    <i class="fas fa-microscope"></i> Data Scientist & AI Researcher
                 </div>
+                <h1>Hi, I'm Belayneh Endalamaw Dejene</h1>
+                <h3><span id="typed-text"></span></h3>
+                <p>Passionate about creating innovative AI solutions, explainable predictive models, and clinical decision support systems for healthcare and society.</p>
                 
-                <button class="read-more-btn" id="read-more-btn">See More</button>
-                
-                <div class="personal-info">
-                    <div class="info-item">
-                        <span class="info-title">Email:</span>
-                        <span class="info-value">belzman2011@gmail.com / Belayneh.endalamaw@uog.edu.et</span>
+                <div class="home-cta-buttons">
+                    <button class="btn btn-primary" data-switch-tab="about">
+                        <i class="fas fa-user"></i> About Me
+                    </button>
+                    <button class="btn btn-primary" data-switch-tab="publications" style="background: #0984e3;">
+                        <i class="fas fa-book-open"></i> Publications (9)
+                    </button>
+                    <button class="btn btn-primary" data-switch-tab="projects" style="background: #10b981;">
+                        <i class="fas fa-code"></i> Projects
+                    </button>
+                    <button class="btn btn-primary" data-switch-tab="contact" style="background: #6c5ce7;">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </button>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://github.com/belzman" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="mailto:belzman2011@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+251915306380" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Tab) -->
+        <section id="about" class="tab-content about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="assets/images/profile.png" alt="Belayneh Endalamaw Dejene Profile Picture">
+                </div>
+                <div class="about-text">
+                    <div class="text-content">
+                        <p class="about-description">
+                            Belayneh Endalamaw Dejene is an accomplished data scientist, artificial intelligence researcher, and university lecturer with an extensive background in information science, predictive modeling, machine learning, and healthcare analytics. Belayneh began his academic journey by obtaining a Bachelor's degree in Information Science from the University of Gondar, Ethiopia, in 2018. He then completed a Master of Science in Data Science and Analytics at the same university in 2021 with distinction.
+                        </p>
+
+                        <div class="expandable-content" id="expandable-content">
+                            <p>
+                                Currently, Belayneh is pursuing his <strong>PhD in Data Science at Bahir Dar University's Institute of Technology</strong> (since 2022). He is also serving as a <strong>Data Scientist and Analyst at the Armauer Hansen Research Institute (AHRI)</strong> under the <em>Data Science Without Borders (DSWB)</em> project, supported by the African Population and Health Research Center (APHRC).
+                            </p>
+                            
+                            <p>
+                                Belayneh serves as <strong>Co-Investigator and Lead AI / Machine Learning Engineer</strong> on the prestigious <em>March of Dimes Discovery Research Grant</em> titled <em>"AI-Enhanced Dynamic Risk Stratification and Risk-Responsive Antenatal Care to Prevent Spontaneous Preterm Birth in Ethiopia: A Cluster Randomized Controlled Trial."</em> In this grant, he leads data engineering, predictive feature development, and model integration into the clinical decision-support system.
+                            </p>
+                            
+                            <p>
+                                During his tenure as a Lecturer and Researcher at the University of Gondar College of Informatics, Belayneh has taught undergraduate courses in programming, data structures, algorithms, databases, and applied machine learning, while serving on academic committees, curriculum modernization, and technology transfer initiatives. He previously served as a Data Analyst at the Ethiopian Commodity Exchange (ECX), conducting quantitative price volatility analyses.
+                            </p>
+                            
+                            <p>
+                                Belayneh has published <strong>9 peer-reviewed research papers</strong> in international journals including <em>HIV Medicine</em>, <em>BMC Public Health</em>, <em>BMC Infectious Diseases</em>, <em>BMC Pregnancy and Childbirth</em>, <em>Italian Journal of Pediatrics</em>, <em>BMC Medical Informatics and Decision Making</em>, and <em>IEEE NIGERCON</em>.
+                            </p>
+                            
+                            <p>
+                                <strong>Research areas:</strong> Artificial Intelligence, Machine Learning, Deep Learning, Explainable & Interpretable AI (XAI), Clinical Decision Support Systems, Healthcare Analytics, Natural Language Processing, Computer Vision, and Digital Twin Simulation for people living with HIV.
+                            </p>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <span class="info-title">Location:</span>
-                        <span class="info-value">Addis Ababa & Gondar, Ethiopia</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-title">Phone:</span>
-                        <span class="info-value">+251 915 306 380</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-title">Affiliations:</span>
-                        <span class="info-value">Armauer Hansen Research Institute & Univ of Gondar</span>
+                    
+                    <button class="read-more-btn" id="read-more-btn">See More</button>
+                    
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value">belzman2011@gmail.com / Belayneh.endalamaw@uog.edu.et</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Location:</span>
+                            <span class="info-value">Addis Ababa & Gondar, Ethiopia</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Phone:</span>
+                            <span class="info-value">+251 915 306 380</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Affiliations:</span>
+                            <span class="info-value">Armauer Hansen Research Institute & Univ of Gondar</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="skills-intro">
-            <h2 class="section-title">Technical Skills</h2>
-            <p>Proficient in modern artificial intelligence, explainable ML, and healthcare computational technologies</p>
-        </div>
+        <!-- Skills Section (Tab) -->
+        <section id="skills" class="tab-content skills">
+            <div class="skills-intro">
+                <h2 class="section-title">Technical Skills</h2>
+                <p>Proficient in modern artificial intelligence, explainable ML, and healthcare computational technologies</p>
+            </div>
 
-        <div class="skill-grid">
-            <!-- Skill 1 -->
-            <article class="skill-card">
-                <div class="skill-media">
-                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80" alt="Healthcare AI & Clinical Decision Support" loading="lazy">
-                </div>
-                <div class="skill-body">
-                    <div class="skill-heading">
-                        <h3>Clinical AI & Health Informatics</h3>
-                        <p>Deploying predictive modeling and risk stratification for maternal health, HIV, and epidemiology.</p>
+            <div class="skill-grid">
+                <!-- Skill 1 -->
+                <article class="skill-card">
+                    <div class="skill-media">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80" alt="Healthcare AI & Clinical Decision Support" loading="lazy">
                     </div>
-                    <div class="skill-list">
-                        <div>
-                            <div class="skill-row"><span>Python</span><span class="skill-percent">95%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+                    <div class="skill-body">
+                        <div class="skill-heading">
+                            <h3>Clinical AI & Health Informatics</h3>
+                            <p>Deploying predictive modeling and risk stratification for maternal health, HIV, and epidemiology.</p>
                         </div>
-                        <div>
-                            <div class="skill-row"><span>PyTorch / Scikit-Learn</span><span class="skill-percent">92%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+                        <div class="skill-list">
+                            <div>
+                                <div class="skill-row"><span>Python</span><span class="skill-percent">95%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+                            </div>
+                            <div>
+                                <div class="skill-row"><span>PyTorch / Scikit-Learn</span><span class="skill-percent">92%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+                            </div>
+                            <div>
+                                <div class="skill-row"><span>OMOP-CDM / Clinical Informatics</span><span class="skill-percent">88%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="skill-row"><span>OMOP-CDM / Clinical Informatics</span><span class="skill-percent">88%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Clinical Decision Support</span>
+                            <span class="skill-tag">Risk Stratification</span>
+                            <span class="skill-tag">OMOP-CDM</span>
+                            <span class="skill-tag">Digital Twins</span>
                         </div>
                     </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Clinical Decision Support</span>
-                        <span class="skill-tag">Risk Stratification</span>
-                        <span class="skill-tag">OMOP-CDM</span>
-                        <span class="skill-tag">Digital Twins</span>
-                    </div>
-                </div>
-            </article>
+                </article>
 
-            <!-- Skill 2 -->
-            <article class="skill-card">
-                <div class="skill-media">
-                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=80" alt="Explainable AI" loading="lazy">
-                </div>
-                <div class="skill-body">
-                    <div class="skill-heading">
-                        <h3>Explainable AI (XAI)</h3>
-                        <p>Providing transparent, clinician-interpretable attributions to bridge the algorithmic trust gap.</p>
+                <!-- Skill 2 -->
+                <article class="skill-card">
+                    <div class="skill-media">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=80" alt="Explainable AI" loading="lazy">
                     </div>
-                    <div class="skill-list">
-                        <div>
-                            <div class="skill-row"><span>SHAP (TreeSHAP & KernelSHAP)</span><span class="skill-percent">95%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+                    <div class="skill-body">
+                        <div class="skill-heading">
+                            <h3>Explainable AI (XAI)</h3>
+                            <p>Providing transparent, clinician-interpretable attributions to bridge the algorithmic trust gap.</p>
                         </div>
-                        <div>
-                            <div class="skill-row"><span>LIME & Partial Dependence</span><span class="skill-percent">90%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                        <div class="skill-list">
+                            <div>
+                                <div class="skill-row"><span>SHAP (TreeSHAP & KernelSHAP)</span><span class="skill-percent">95%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+                            </div>
+                            <div>
+                                <div class="skill-row"><span>LIME & Partial Dependence</span><span class="skill-percent">90%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div>
+                                <div class="skill-row"><span>Model Calibration & Fairness</span><span class="skill-percent">92%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="skill-row"><span>Model Calibration & Fairness</span><span class="skill-percent">92%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SHAP</span>
+                            <span class="skill-tag">LIME</span>
+                            <span class="skill-tag">Feature Importance</span>
+                            <span class="skill-tag">Clinical Trust</span>
                         </div>
                     </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">SHAP</span>
-                        <span class="skill-tag">LIME</span>
-                        <span class="skill-tag">Feature Importance</span>
-                        <span class="skill-tag">Clinical Trust</span>
-                    </div>
-                </div>
-            </article>
+                </article>
 
-            <!-- Skill 3 -->
-            <article class="skill-card">
-                <div class="skill-media">
-                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80" alt="Generative AI & LLMs" loading="lazy">
+                <!-- Skill 3 -->
+                <article class="skill-card">
+                    <div class="skill-media">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80" alt="Generative AI & LLMs" loading="lazy">
+                    </div>
+                    <div class="skill-body">
+                        <div class="skill-heading">
+                            <h3>Generative AI & LLMs</h3>
+                            <p>Building controllable RAG pipelines, bilingual assistants, and conversational medical agents.</p>
+                        </div>
+                        <div class="skill-list">
+                            <div>
+                                <div class="skill-row"><span>Google Gemini 2.0 / OpenAI APIs</span><span class="skill-percent">92%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+                            </div>
+                            <div>
+                                <div class="skill-row"><span>RAG Systems / ChromaDB</span><span class="skill-percent">90%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div>
+                                <div class="skill-row"><span>Bilingual NLP (English & Amharic)</span><span class="skill-percent">94%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">RAG</span>
+                            <span class="skill-tag">ChromaDB</span>
+                            <span class="skill-tag">Gemini 2.0</span>
+                            <span class="skill-tag">Vector Search</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Skill 4 -->
+                <article class="skill-card">
+                    <div class="skill-media">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=80" alt="Computer Vision" loading="lazy">
+                    </div>
+                    <div class="skill-body">
+                        <div class="skill-heading">
+                            <h3>Computer Vision & Deep Learning</h3>
+                            <p>Implementing visual intelligence for medical imaging, diagnostic support, and object classification.</p>
+                        </div>
+                        <div class="skill-list">
+                            <div>
+                                <div class="skill-row"><span>PyTorch / Torchvision</span><span class="skill-percent">90%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div>
+                                <div class="skill-row"><span>TensorFlow / Keras</span><span class="skill-percent">88%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+                            </div>
+                            <div>
+                                <div class="skill-row"><span>Vision Transformers (ViT)</span><span class="skill-percent">85%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">CNNs</span>
+                            <span class="skill-tag">Vision Transformers</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Skill 5 -->
+                <article class="skill-card">
+                    <div class="skill-media">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Data Analytics" loading="lazy">
+                    </div>
+                    <div class="skill-body">
+                        <div class="skill-heading">
+                            <h3>Data Science & Big Data Analytics</h3>
+                            <p>Extracting high-value actionable insights from demographic, agricultural, and clinical datasets.</p>
+                        </div>
+                        <div class="skill-list">
+                            <div>
+                                <div class="skill-row"><span>PostgreSQL / SQL</span><span class="skill-percent">94%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+                            </div>
+                            <div>
+                                <div class="skill-row"><span>Pandas / NumPy / SciPy</span><span class="skill-percent">95%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+                            </div>
+                            <div>
+                                <div class="skill-row"><span>Power BI / Tableau / R</span><span class="skill-percent">88%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Statistical Inference</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Skill 6 -->
+                <article class="skill-card">
+                    <div class="skill-media">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80" alt="Full Stack AI" loading="lazy">
+                    </div>
+                    <div class="skill-body">
+                        <div class="skill-heading">
+                            <h3>Full-Stack AI Engineering</h3>
+                            <p>Translating analytical model pipelines into production web applications and microservices.</p>
+                        </div>
+                        <div class="skill-list">
+                            <div>
+                                <div class="skill-row"><span>Flask / FastAPI</span><span class="skill-percent">92%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+                            </div>
+                            <div>
+                                <div class="skill-row"><span>React 18 / Tailwind CSS</span><span class="skill-percent">88%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+                            </div>
+                            <div>
+                                <div class="skill-row"><span>Docker / Git / Linux</span><span class="skill-percent">90%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Education Section (Tab) -->
+        <section id="education" class="tab-content education">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <!-- PhD -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Doctor of Philosophy (PhD) in Data Science</h3>
+                        <h4>Bahir Dar University, Institute of Technology</h4>
+                        <p class="period">2022 - Present</p>
+                        <ul>
+                            <li>Specializing in Artificial Intelligence, Explainable AI (XAI), and Healthcare Informatics</li>
+                            <li>Research focus on Digital Twin Simulation for people living with HIV and dynamic risk stratification</li>
+                            <li>Recipient of PhD Studentship under Data Science Without Borders (DSWB) / APHRC at AHRI</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="skill-body">
-                    <div class="skill-heading">
+
+                <!-- MSc -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Master of Science in Data Science and Analytics</h3>
+                        <h4>University of Gondar</h4>
+                        <p class="period">2019 - 2021</p>
+                        <ul>
+                            <li>Graduated with Distinction in Data Science and Advanced Predictive Modeling</li>
+                            <li>Conducted graduate thesis on homogeneous ensemble machine learning algorithms for maternal health</li>
+                            <li>Co-authored multiple international journal publications during master's tenure</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- BSc -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science in Information Science</h3>
+                        <h4>University of Gondar</h4>
+                        <p class="period">2015 - 2018</p>
+                        <ul>
+                            <li>Comprehensive curriculum in programming, algorithm design, data structures, and database management</li>
+                            <li>Graduated with top academic standing and immediately appointed to the University academic faculty</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section (Tab) -->
+        <section id="experience" class="tab-content experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Organization</th>
+                            <th>Location</th>
+                            <th>Period</th>
+                            <th>Responsibilities</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Data Scientist & Analyst (DSWB Fellow)</strong></td>
+                            <td>Armauer Hansen Research Institute (AHRI)</td>
+                            <td>Addis Ababa, Ethiopia</td>
+                            <td>2025 - Present</td>
+                            <td>
+                                <ul>
+                                    <li>Lead data scientist under the Data Science Without Borders (DSWB) project funded by APHRC</li>
+                                    <li>Conducting advanced machine learning and statistical modeling on high-dimensional clinical and epidemiological surveillance cohorts</li>
+                                    <li>Developing predictive models for infectious disease outcomes, maternal health, and clinical decision readiness</li>
+                                    <li>Collaborating with cross-national multidisciplinary teams across Kenya, Senegal, and the UK</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Co-Investigator & Lead AI Engineer</strong></td>
+                            <td>March of Dimes Discovery Research Grant</td>
+                            <td>Gondar / Addis Ababa, Ethiopia</td>
+                            <td>2024 - Present</td>
+                            <td>
+                                <ul>
+                                    <li>Leading data management, predictive machine learning development, and AI architecture for the randomized clinical trial</li>
+                                    <li>Developing and validating the dynamic risk-stratification model for spontaneous preterm birth prevention</li>
+                                    <li>Integrating calibrated AI model outputs into the T-H2P clinical decision-support system for routine antenatal care (ANC)</li>
+                                    <li>Ensuring clinical interpretability and fairness of AI recommendations for frontline healthcare workers</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lecturer & Academic Researcher</strong></td>
+                            <td>University of Gondar, College of Informatics</td>
+                            <td>Gondar, Ethiopia</td>
+                            <td>2018 - Present</td>
+                            <td>
+                                <ul>
+                                    <li>Teaching undergraduate and graduate courses in programming, data structures, algorithms, databases, and machine learning</li>
+                                    <li>Supervising undergraduate theses and guiding students in computational projects</li>
+                                    <li>Contributing to university technology transfer, curriculum development, and academic faculty committees</li>
+                                    <li>Conducting funded interdisciplinary research in healthcare AI and public health informatics</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data Analyst</strong></td>
+                            <td>Ethiopian Commodity Exchange (ECX)</td>
+                            <td>Addis Ababa, Ethiopia</td>
+                            <td>Prior Appointment</td>
+                            <td>
+                                <ul>
+                                    <li>Conducted quantitative econometric data analysis and modeling on agricultural commodity price trends</li>
+                                    <li>Investigated economic factors and market indicators associated with temporal variations in commodity closing prices</li>
+                                    <li>Delivered executive analytical briefings and policy reports for stakeholders</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Publications Section (Tab) -->
+        <section id="publications" class="tab-content publications">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-grid">
+                <!-- Paper 1 -->
+                <div class="publication-card">
+                    <h3>Artificial intelligence for predicting antiretroviral therapy outcomes in people living with HIV: a systematic review of predictive models, predictors and clinical readiness</h3>
+                    <p class="authors">Authors: <span>Dejene BE</span>, Assabie Y, Tadele M, Adnew B, Tsegaye R, Sintayehu Y, Alemu A, Howe R, Girma T, Tegegne T, Abdissa A.</p>
+                    <p class="conference"><i class="fas fa-book-open"></i> HIV Medicine (Wiley) &bull; 2026</p>
+                    <p class="citation"><i class="fas fa-link"></i> DOI: 10.1111/hiv.70277</p>
+                    <p class="description">Comprehensive systematic review synthesizing global AI and machine learning architectures for predicting ART treatment failure, adherence, and clinical readiness among people living with HIV.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1111/hiv.70277" target="_blank" class="btn btn-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <!-- Paper 2 -->
+                <div class="publication-card">
+                    <h3>Predicting abnormal birth weight and identifying associated factors using machine learning in the Hararghe Health and Demographic Surveillance System, Ethiopia</h3>
+                    <p class="authors">Authors: Abdeta S, Diop O, Cygu S, Drame A, Momanyi R, <span>Dejene BE</span>, Tadele M, Sintayehu Y, Barasa M, Woldie M, et al.</p>
+                    <p class="conference"><i class="fas fa-book-open"></i> BMC Public Health &bull; 2026</p>
+                    <p class="citation"><i class="fas fa-link"></i> DOI: 10.1186/s12889-026-28135-0</p>
+                    <p class="description">Utilized large-scale longitudinal surveillance cohort data from eastern Ethiopia to train gradient boosting and ensemble models for identifying maternal determinants of abnormal birth weight.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1186/s12889-026-28135-0" target="_blank" class="btn btn-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <!-- Paper 3 -->
+                <div class="publication-card">
+                    <h3>Explainable AI for symptom-based detection of monkeypox: a machine learning approach</h3>
+                    <p class="authors">Authors: <span>Dejene BE</span>, Setegn GM.</p>
+                    <p class="conference"><i class="fas fa-book-open"></i> BMC Infectious Diseases &bull; 2025; 25(1):419</p>
+                    <p class="citation"><i class="fas fa-link"></i> DOI: 10.1186/s12879-025-10738-4</p>
+                    <p class="description">Developed explainable machine learning frameworks with SHAP and LIME to provide frontline clinicians with transparent, feature-level diagnostic explanations for viral outbreak triage.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1186/s12879-025-10738-4" target="_blank" class="btn btn-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <!-- Paper 4 -->
+                <div class="publication-card">
+                    <h3>Improving machine learning models through explainable AI for predicting the level of dietary diversity among Ethiopian preschool children</h3>
+                    <p class="authors">Authors: Setegn GM, <span>Dejene BE</span>.</p>
+                    <p class="conference"><i class="fas fa-book-open"></i> Italian Journal of Pediatrics &bull; 2025; 51(1):91</p>
+                    <p class="citation"><i class="fas fa-link"></i> DOI: 10.1186/s13052-025-01892-1</p>
+                    <p class="description">Applied tree ensembles coupled with model-agnostic explainability tools to evaluate policy-actionable determinants of pediatric nutritional diversity scores.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1186/s13052-025-01892-1" target="_blank" class="btn btn-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <!-- Paper 5 -->
+                <div class="publication-card">
+                    <h3>Explainable artificial intelligence models for predicting pregnancy termination among reproductive-aged women in six East African countries: machine learning approach</h3>
+                    <p class="authors">Authors: Setegn GM, <span>Dejene BE</span>.</p>
+                    <p class="conference"><i class="fas fa-book-open"></i> BMC Pregnancy and Childbirth &bull; 2024; 24(1):600</p>
+                    <p class="citation"><i class="fas fa-link"></i> DOI: 10.1186/s12884-024-06773-9</p>
+                    <p class="description">Cross-country demographic analysis across Ethiopia, Kenya, Uganda, Tanzania, Rwanda, and Burundi investigating maternal health determinants using interpretable machine learning.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1186/s12884-024-06773-9" target="_blank" class="btn btn-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <!-- Paper 6 -->
+                <div class="publication-card">
+                    <h3>Explainable artificial intelligence models for birth weight prediction based on maternal parameters in Ethiopia</h3>
+                    <p class="authors">Authors: Setegn GM, Engda AA, Worku WK, <span>Dejene BE</span>, Salau AO, Asnake NW.</p>
+                    <p class="conference"><i class="fas fa-book-open"></i> 2024 IEEE 5th International Conference on Electro-Computing Technologies (NIGERCON)</p>
+                    <p class="citation"><i class="fas fa-link"></i> DOI: 10.1109/NIGERCON62786.2024.10927388</p>
+                    <p class="description">IEEE conference paper presenting an explainable birth weight estimation model for resource-constrained clinics lacking ultrasound equipment.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1109/NIGERCON62786.2024.10927388" target="_blank" class="btn btn-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <!-- Paper 7 -->
+                <div class="publication-card">
+                    <h3>Explainable and interpretable dry beans classification using soft voting classifier</h3>
+                    <p class="authors">Authors: <span>Dejene BE</span>, Setegn GM, Belay S.</p>
+                    <p class="conference"><i class="fas fa-book-open"></i> Data Science for Agriculture in Africa (DAAfrica@CARI 2024)</p>
+                    <p class="citation"><i class="fas fa-calendar-alt"></i> Published in 2025: 24-38</p>
+                    <p class="description">High-accuracy soft voting ensemble classifying agricultural crop grains with transparent morphological feature attribution.</p>
+                    <div class="publication-links">
+                        <a href="https://github.com/belzman" target="_blank" class="btn btn-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <!-- Paper 8 -->
+                <div class="publication-card">
+                    <h3>Predicting the level of anemia among Ethiopian pregnant women using homogeneous ensemble machine learning algorithm</h3>
+                    <p class="authors">Authors: <span>Dejene BE</span>, Abuhay TM, Bogale DS.</p>
+                    <p class="conference"><i class="fas fa-book-open"></i> BMC Medical Informatics and Decision Making &bull; 2022; 22(1):247</p>
+                    <p class="citation"><i class="fas fa-link"></i> DOI: 10.1186/s12911-022-01992-6</p>
+                    <p class="description">Developed and validated homogeneous ensemble models for predicting anemia severity in routine antenatal screening, contributing to maternal healthcare improvement.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1186/s12911-022-01992-6" target="_blank" class="btn btn-primary">View Paper</a>
+                    </div>
+                </div>
+
+                <!-- Paper 9 -->
+                <div class="publication-card">
+                    <h3>Predicting perinatal mortality based on maternal health status and health insurance service using homogeneous ensemble machine learning methods</h3>
+                    <p class="authors">Authors: Bogale DS, Abuhay TM, <span>Dejene BE</span>.</p>
+                    <p class="conference"><i class="fas fa-book-open"></i> BMC Medical Informatics and Decision Making &bull; 2022; 22(1):341</p>
+                    <p class="citation"><i class="fas fa-link"></i> DOI: 10.1186/s12911-022-02084-1</p>
+                    <p class="description">Pioneered machine learning risk prediction for perinatal mortality based on maternal health records and community health insurance coverage in Ethiopia.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1186/s12911-022-02084-1" target="_blank" class="btn btn-primary">View Paper</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Section (Tab) -->
+        <section id="leadership" class="tab-content leadership">
+            <h2 class="section-title">Leadership</h2>
+            <div class="experience-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Role</th>
+                            <th>Organization</th>
+                            <th>Period</th>
+                            <th>Key Responsibilities</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>AI & Machine Learning Lead (Co-Investigator)</strong></td>
+                            <td>March of Dimes Discovery Research Grant</td>
+                            <td>2024 - Present</td>
+                            <td>
+                                <ul>
+                                    <li>Directing the AI research component and dynamic risk stratification architecture for the preterm birth randomized clinical trial</li>
+                                    <li>Supervising model validation and clinical safety auditing across healthcare facilities</li>
+                                    <li>Leading technical synchronization between medical clinicians and data engineering teams</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Research Fellow & Data Analytics Lead</strong></td>
+                            <td>Data Science Without Borders (AHRI / APHRC)</td>
+                            <td>2025 - Present</td>
+                            <td>
+                                <ul>
+                                    <li>Representing AHRI in regional research workshops and international scientific meetings</li>
+                                    <li>Mentoring junior research assistants in statistical computing and machine learning workflows</li>
+                                    <li>Leading data standardization and OMOP-CDM mapping initiatives</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Academic Committee Member & Course Chair</strong></td>
+                            <td>University of Gondar, College of Informatics</td>
+                            <td>2019 - Present</td>
+                            <td>
+                                <ul>
+                                    <li>Serving on department curriculum revision and academic quality assurance committees</li>
+                                    <li>Organizing faculty technology seminars, hackathons, and research development workshops</li>
+                                    <li>Mentoring undergraduate students in artificial intelligence projects and capstone research</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Scientific Contributor & Presenter</strong></td>
+                            <td>Deep Learning Indaba & Black in AI @ NeurIPS</td>
+                            <td>2023 - Present</td>
+                            <td>
+                                <ul>
+                                    <li>Active participation in pan-African AI capacity building and diversity initiatives</li>
+                                    <li>Presenting research findings on explainable AI in maternal health and infectious diseases</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Projects Section (Tab) -->
+        <section id="projects" class="tab-content projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: ARTist -->
+                <div class="project-card">
+                    <h3>ARTist: AI-Driven Antiretroviral Therapy Clinical Decision Support & Bilingual RAG Platform</h3>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80" alt="ARTist Clinical AI Platform">
+                        </div>
+                        <div class="project-info">
+                            <p>Developed an enterprise-grade, guideline-grounded clinical decision intelligence platform for HIV/ART care pathways. Features calibrated machine learning for treatment failure risk estimation, care-cascade longitudinal monitoring, and a bilingual (English and Amharic) RAG assistant powered by Google Gemini 2.0 and ChromaDB referencing Ethiopian and WHO guidelines.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>React 18</span>
+                                <span>Tailwind CSS</span>
+                                <span>ChromaDB</span>
+                                <span>Gemini 2.0</span>
+                                <span>PostgreSQL</span>
+                                <span>Scikit-Learn</span>
+                                <span>Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/belzman/ARTist" target="_blank" class="btn btn-primary">View Project / Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: ClimAI-Africa -->
+                <div class="project-card">
+                    <h3>ClimAI-Africa: Climate-Respiratory Disease Forecasting & Geospatial Warning Platform</h3>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1534088568595-a066f410bcda?auto=format&fit=crop&w=800&q=80" alt="ClimAI-Africa">
+                        </div>
+                        <div class="project-info">
+                            <p>A machine learning platform integrating meteorological satellite variables (temperature, humidity, rainfall) and atmospheric particulate data with hospital respiratory admissions to forecast seasonal disease surges across African sub-regions.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>PyTorch</span>
+                                <span>GeoPandas</span>
+                                <span>XGBoost</span>
+                                <span>Streamlit</span>
+                                <span>FastAPI</span>
+                                <span>Scikit-Learn</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/belzman/ClimAI-Africa" target="_blank" class="btn btn-primary">View Project / Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Preterm Birth Risk Stratifier -->
+                <div class="project-card">
+                    <h3>Spontaneous Preterm Birth Dynamic Risk Stratification System</h3>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80" alt="Preterm Birth Risk Stratifier">
+                        </div>
+                        <div class="project-info">
+                            <p>Developed under the March of Dimes Discovery Research Grant. Deploys homogeneous ensemble machine learning to model maternal demographic, nutritional, and clinical markers, delivering risk-responsive antenatal care pathways into routine health center workflows.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Ensemble ML</span>
+                                <span>Explainable AI (SHAP)</span>
+                                <span>PostgreSQL</span>
+                                <span>FastAPI</span>
+                                <span>Maternal Health</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/belzman/My_portifolio" target="_blank" class="btn btn-primary">View Project / Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Clinical Trial Audit System -->
+                <div class="project-card">
+                    <h3>Clinical Trial Intelligent Quality Audit & Data Assurance System</h3>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Clinical Trial Audit System">
+                        </div>
+                        <div class="project-info">
+                            <p>Automated reconciliation, data anomaly detection, and protocol compliance audit system designed for multi-center epidemiological and clinical trials across healthcare institutions in Africa.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>PostgreSQL</span>
+                                <span>React</span>
+                                <span>Docker</span>
+                                <span>Clinical QA</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/belzman/clinical-trial-audit-system" target="_blank" class="btn btn-primary">View Project / Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: OMOP-CDM -->
+                <div class="project-card">
+                    <h3>OMOP-CDM Health Data Standardization & OHDSI Pipeline</h3>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80" alt="OMOP-CDM Standardization">
+                        </div>
+                        <div class="project-info">
+                            <p>Standardization pipeline converting Ethiopian electronic health records and demographic surveillance datasets into the international OMOP Common Data Model (OHDSI) for multi-site federated clinical research.</p>
+                            <div class="project-tags">
+                                <span>SQL</span>
+                                <span>WhiteRabbit</span>
+                                <span>PostgreSQL</span>
+                                <span>OMOP CDM v5.4</span>
+                                <span>ETL</span>
+                                <span>OHDSI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/belzman/OMOP" target="_blank" class="btn btn-primary">View Project / Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section (Tab) -->
+        <section id="certificates" class="tab-content certificates">
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-icon"><i class="fas fa-award"></i></div>
+                    <div class="certificate-info">
+                        <h3>Deep Learning Indaba</h3>
+                        <p>Certificate of Recognition for Pan-African AI & Healthcare Research (2023)</p>
+                        <a href="https://github.com/belzman" target="_blank" class="certificate-link">View Full Certificate &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="certificate-info">
+                        <h3>Black in AI @ NeurIPS</h3>
+                        <p>Participation & Research Presentation in Global Machine Learning Co-located Workshop</p>
+                        <a href="https://github.com/belzman" target="_blank" class="certificate-link">View Full Certificate &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-icon"><i class="fas fa-brain"></i></div>
+                    <div class="certificate-info">
+                        <h3>Artificial Intelligence & ML</h3>
+                        <p>Advanced AI and Deep Learning Specialization — IBM & Columbia University</p>
+                        <a href="https://github.com/belzman" target="_blank" class="certificate-link">View Full Certificate &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-icon"><i class="fas fa-globe-africa"></i></div>
+                    <div class="certificate-info">
+                        <h3>Data Science Africa (DSA)</h3>
+                        <p>Advanced Computational Data Science, Bayesian Modeling & IoT Summer School</p>
+                        <a href="https://github.com/belzman" target="_blank" class="certificate-link">View Full Certificate &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="certificate-info">
+                        <h3>Antimicrobial Drug Resistance AI</h3>
+                        <p>Data Science Network & DSWB AMR Taskforce Machine Learning Certification</p>
+                        <a href="https://github.com/belzman" target="_blank" class="certificate-link">View Full Certificate &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-icon"><i class="fas fa-robot"></i></div>
+                    <div class="certificate-info">
                         <h3>Generative AI & LLMs</h3>
-                        <p>Building controllable RAG pipelines, bilingual assistants, and conversational medical agents.</p>
-                    </div>
-                    <div class="skill-list">
-                        <div>
-                            <div class="skill-row"><span>Google Gemini 2.0 / OpenAI APIs</span><span class="skill-percent">92%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 92%;"></div></div>
-                        </div>
-                        <div>
-                            <div class="skill-row"><span>RAG Systems / ChromaDB</span><span class="skill-percent">90%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-                        </div>
-                        <div>
-                            <div class="skill-row"><span>Bilingual NLP (English & Amharic)</span><span class="skill-percent">94%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 94%;"></div></div>
-                        </div>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">RAG</span>
-                        <span class="skill-tag">ChromaDB</span>
-                        <span class="skill-tag">Gemini 2.0</span>
-                        <span class="skill-tag">Vector Search</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Skill 4 -->
-            <article class="skill-card">
-                <div class="skill-media">
-                    <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=900&q=80" alt="Computer Vision" loading="lazy">
-                </div>
-                <div class="skill-body">
-                    <div class="skill-heading">
-                        <h3>Computer Vision & Deep Learning</h3>
-                        <p>Implementing visual intelligence for medical imaging, diagnostic support, and object classification.</p>
-                    </div>
-                    <div class="skill-list">
-                        <div>
-                            <div class="skill-row"><span>PyTorch / Torchvision</span><span class="skill-percent">90%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-                        </div>
-                        <div>
-                            <div class="skill-row"><span>TensorFlow / Keras</span><span class="skill-percent">88%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
-                        </div>
-                        <div>
-                            <div class="skill-row"><span>Vision Transformers (ViT)</span><span class="skill-percent">85%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
-                        </div>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">CNNs</span>
-                        <span class="skill-tag">Vision Transformers</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Skill 5 -->
-            <article class="skill-card">
-                <div class="skill-media">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Data Analytics" loading="lazy">
-                </div>
-                <div class="skill-body">
-                    <div class="skill-heading">
-                        <h3>Data Science & Big Data Analytics</h3>
-                        <p>Extracting high-value actionable insights from demographic, agricultural, and clinical datasets.</p>
-                    </div>
-                    <div class="skill-list">
-                        <div>
-                            <div class="skill-row"><span>PostgreSQL / SQL</span><span class="skill-percent">94%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 94%;"></div></div>
-                        </div>
-                        <div>
-                            <div class="skill-row"><span>Pandas / NumPy / SciPy</span><span class="skill-percent">95%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 95%;"></div></div>
-                        </div>
-                        <div>
-                            <div class="skill-row"><span>Power BI / Tableau / R</span><span class="skill-percent">88%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
-                        </div>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Statistical Inference</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Skill 6 -->
-            <article class="skill-card">
-                <div class="skill-media">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80" alt="Full Stack AI" loading="lazy">
-                </div>
-                <div class="skill-body">
-                    <div class="skill-heading">
-                        <h3>Full-Stack AI Engineering</h3>
-                        <p>Translating analytical model pipelines into production web applications and microservices.</p>
-                    </div>
-                    <div class="skill-list">
-                        <div>
-                            <div class="skill-row"><span>Flask / FastAPI</span><span class="skill-percent">92%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 92%;"></div></div>
-                        </div>
-                        <div>
-                            <div class="skill-row"><span>React 18 / Tailwind CSS</span><span class="skill-percent">88%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
-                        </div>
-                        <div>
-                            <div class="skill-row"><span>Docker / Git / Linux</span><span class="skill-percent">90%</span></div>
-                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-                        </div>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Git</span>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <h2 class="section-title">Education</h2>
-        <div class="timeline">
-            <!-- PhD -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Doctor of Philosophy (PhD) in Data Science</h3>
-                    <h4>Bahir Dar University, Institute of Technology</h4>
-                    <p class="period">2022 - Present</p>
-                    <ul>
-                        <li>Specializing in Artificial Intelligence, Explainable AI (XAI), and Healthcare Informatics</li>
-                        <li>Research focus on Digital Twin Simulation for people living with HIV and dynamic risk stratification</li>
-                        <li>Recipient of PhD Studentship under Data Science Without Borders (DSWB) / APHRC at AHRI</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- MSc -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Master of Science in Data Science and Analytics</h3>
-                    <h4>University of Gondar</h4>
-                    <p class="period">2019 - 2021</p>
-                    <ul>
-                        <li>Graduated with Distinction in Data Science and Advanced Predictive Modeling</li>
-                        <li>Conducted graduate thesis on homogeneous ensemble machine learning algorithms for maternal health</li>
-                        <li>Co-authored multiple international journal publications during master's tenure</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- BSc -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Bachelor of Science in Information Science</h3>
-                    <h4>University of Gondar</h4>
-                    <p class="period">2015 - 2018</p>
-                    <ul>
-                        <li>Comprehensive curriculum in programming, algorithm design, data structures, and database management</li>
-                        <li>Graduated with top academic standing and immediately appointed to the University academic faculty</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section (Table Layout) -->
-    <section id="experience" class="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="experience-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Position</th>
-                        <th>Organization</th>
-                        <th>Location</th>
-                        <th>Period</th>
-                        <th>Responsibilities</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Data Scientist & Analyst (DSWB Fellow)</strong></td>
-                        <td>Armauer Hansen Research Institute (AHRI)</td>
-                        <td>Addis Ababa, Ethiopia</td>
-                        <td>2025 - Present</td>
-                        <td>
-                            <ul>
-                                <li>Lead data scientist under the Data Science Without Borders (DSWB) project funded by APHRC</li>
-                                <li>Conducting advanced machine learning and statistical modeling on high-dimensional clinical and epidemiological surveillance cohorts</li>
-                                <li>Developing predictive models for infectious disease outcomes, maternal health, and clinical decision readiness</li>
-                                <li>Collaborating with cross-national multidisciplinary teams across Kenya, Senegal, and the UK</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Co-Investigator & Lead AI Engineer</strong></td>
-                        <td>March of Dimes Discovery Research Grant</td>
-                        <td>Gondar / Addis Ababa, Ethiopia</td>
-                        <td>2024 - Present</td>
-                        <td>
-                            <ul>
-                                <li>Leading data management, predictive machine learning development, and AI architecture for the randomized clinical trial</li>
-                                <li>Developing and validating the dynamic risk-stratification model for spontaneous preterm birth prevention</li>
-                                <li>Integrating calibrated AI model outputs into the T-H2P clinical decision-support system for routine antenatal care (ANC)</li>
-                                <li>Ensuring clinical interpretability and fairness of AI recommendations for frontline healthcare workers</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Lecturer & Academic Researcher</strong></td>
-                        <td>University of Gondar, College of Informatics</td>
-                        <td>Gondar, Ethiopia</td>
-                        <td>2018 - Present</td>
-                        <td>
-                            <ul>
-                                <li>Teaching undergraduate and graduate courses in programming, data structures, algorithms, databases, and machine learning</li>
-                                <li>Supervising undergraduate theses and guiding students in computational projects</li>
-                                <li>Contributing to university technology transfer, curriculum development, and academic faculty committees</li>
-                                <li>Conducting funded interdisciplinary research in healthcare AI and public health informatics</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Data Analyst</strong></td>
-                        <td>Ethiopian Commodity Exchange (ECX)</td>
-                        <td>Addis Ababa, Ethiopia</td>
-                        <td>Prior Appointment</td>
-                        <td>
-                            <ul>
-                                <li>Conducted quantitative econometric data analysis and modeling on agricultural commodity price trends</li>
-                                <li>Investigated economic factors and market indicators associated with temporal variations in commodity closing prices</li>
-                                <li>Delivered executive analytical briefings and policy reports for stakeholders</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="publications">
-        <h2 class="section-title">Publications</h2>
-        <div class="publications-grid">
-            <!-- Paper 1 -->
-            <div class="publication-card">
-                <h3>Artificial intelligence for predicting antiretroviral therapy outcomes in people living with HIV: a systematic review of predictive models, predictors and clinical readiness</h3>
-                <p class="authors">Authors: <span>Dejene BE</span>, Assabie Y, Tadele M, Adnew B, Tsegaye R, Sintayehu Y, Alemu A, Howe R, Girma T, Tegegne T, Abdissa A.</p>
-                <p class="conference"><i class="fas fa-book-open"></i> HIV Medicine (Wiley) &bull; 2026</p>
-                <p class="citation"><i class="fas fa-link"></i> DOI: 10.1111/hiv.70277</p>
-                <p class="description">Comprehensive systematic review synthesizing global AI and machine learning architectures for predicting ART treatment failure, adherence, and clinical readiness among people living with HIV.</p>
-                <div class="publication-links">
-                    <a href="https://doi.org/10.1111/hiv.70277" target="_blank" class="btn btn-primary">View Paper</a>
-                </div>
-            </div>
-
-            <!-- Paper 2 -->
-            <div class="publication-card">
-                <h3>Predicting abnormal birth weight and identifying associated factors using machine learning in the Hararghe Health and Demographic Surveillance System, Ethiopia</h3>
-                <p class="authors">Authors: Abdeta S, Diop O, Cygu S, Drame A, Momanyi R, <span>Dejene BE</span>, Tadele M, Sintayehu Y, Barasa M, Woldie M, et al.</p>
-                <p class="conference"><i class="fas fa-book-open"></i> BMC Public Health &bull; 2026</p>
-                <p class="citation"><i class="fas fa-link"></i> DOI: 10.1186/s12889-026-28135-0</p>
-                <p class="description">Utilized large-scale longitudinal surveillance cohort data from eastern Ethiopia to train gradient boosting and ensemble models for identifying maternal determinants of abnormal birth weight.</p>
-                <div class="publication-links">
-                    <a href="https://doi.org/10.1186/s12889-026-28135-0" target="_blank" class="btn btn-primary">View Paper</a>
-                </div>
-            </div>
-
-            <!-- Paper 3 -->
-            <div class="publication-card">
-                <h3>Explainable AI for symptom-based detection of monkeypox: a machine learning approach</h3>
-                <p class="authors">Authors: <span>Dejene BE</span>, Setegn GM.</p>
-                <p class="conference"><i class="fas fa-book-open"></i> BMC Infectious Diseases &bull; 2025; 25(1):419</p>
-                <p class="citation"><i class="fas fa-link"></i> DOI: 10.1186/s12879-025-10738-4</p>
-                <p class="description">Developed explainable machine learning frameworks with SHAP and LIME to provide frontline clinicians with transparent, feature-level diagnostic explanations for viral outbreak triage.</p>
-                <div class="publication-links">
-                    <a href="https://doi.org/10.1186/s12879-025-10738-4" target="_blank" class="btn btn-primary">View Paper</a>
-                </div>
-            </div>
-
-            <!-- Paper 4 -->
-            <div class="publication-card">
-                <h3>Improving machine learning models through explainable AI for predicting the level of dietary diversity among Ethiopian preschool children</h3>
-                <p class="authors">Authors: Setegn GM, <span>Dejene BE</span>.</p>
-                <p class="conference"><i class="fas fa-book-open"></i> Italian Journal of Pediatrics &bull; 2025; 51(1):91</p>
-                <p class="citation"><i class="fas fa-link"></i> DOI: 10.1186/s13052-025-01892-1</p>
-                <p class="description">Applied tree ensembles coupled with model-agnostic explainability tools to evaluate policy-actionable determinants of pediatric nutritional diversity scores.</p>
-                <div class="publication-links">
-                    <a href="https://doi.org/10.1186/s13052-025-01892-1" target="_blank" class="btn btn-primary">View Paper</a>
-                </div>
-            </div>
-
-            <!-- Paper 5 -->
-            <div class="publication-card">
-                <h3>Explainable artificial intelligence models for predicting pregnancy termination among reproductive-aged women in six East African countries: machine learning approach</h3>
-                <p class="authors">Authors: Setegn GM, <span>Dejene BE</span>.</p>
-                <p class="conference"><i class="fas fa-book-open"></i> BMC Pregnancy and Childbirth &bull; 2024; 24(1):600</p>
-                <p class="citation"><i class="fas fa-link"></i> DOI: 10.1186/s12884-024-06773-9</p>
-                <p class="description">Cross-country demographic analysis across Ethiopia, Kenya, Uganda, Tanzania, Rwanda, and Burundi investigating maternal health determinants using interpretable machine learning.</p>
-                <div class="publication-links">
-                    <a href="https://doi.org/10.1186/s12884-024-06773-9" target="_blank" class="btn btn-primary">View Paper</a>
-                </div>
-            </div>
-
-            <!-- Paper 6 -->
-            <div class="publication-card">
-                <h3>Explainable artificial intelligence models for birth weight prediction based on maternal parameters in Ethiopia</h3>
-                <p class="authors">Authors: Setegn GM, Engda AA, Worku WK, <span>Dejene BE</span>, Salau AO, Asnake NW.</p>
-                <p class="conference"><i class="fas fa-book-open"></i> 2024 IEEE 5th International Conference on Electro-Computing Technologies (NIGERCON)</p>
-                <p class="citation"><i class="fas fa-link"></i> DOI: 10.1109/NIGERCON62786.2024.10927388</p>
-                <p class="description">IEEE conference paper presenting an explainable birth weight estimation model for resource-constrained clinics lacking ultrasound equipment.</p>
-                <div class="publication-links">
-                    <a href="https://doi.org/10.1109/NIGERCON62786.2024.10927388" target="_blank" class="btn btn-primary">View Paper</a>
-                </div>
-            </div>
-
-            <!-- Paper 7 -->
-            <div class="publication-card">
-                <h3>Explainable and interpretable dry beans classification using soft voting classifier</h3>
-                <p class="authors">Authors: <span>Dejene BE</span>, Setegn GM, Belay S.</p>
-                <p class="conference"><i class="fas fa-book-open"></i> Data Science for Agriculture in Africa (DAAfrica@CARI 2024)</p>
-                <p class="citation"><i class="fas fa-calendar-alt"></i> Published in 2025: 24-38</p>
-                <p class="description">High-accuracy soft voting ensemble classifying agricultural crop grains with transparent morphological feature attribution.</p>
-                <div class="publication-links">
-                    <a href="https://github.com/belzman" target="_blank" class="btn btn-primary">View Paper</a>
-                </div>
-            </div>
-
-            <!-- Paper 8 -->
-            <div class="publication-card">
-                <h3>Predicting the level of anemia among Ethiopian pregnant women using homogeneous ensemble machine learning algorithm</h3>
-                <p class="authors">Authors: <span>Dejene BE</span>, Abuhay TM, Bogale DS.</p>
-                <p class="conference"><i class="fas fa-book-open"></i> BMC Medical Informatics and Decision Making &bull; 2022; 22(1):247</p>
-                <p class="citation"><i class="fas fa-link"></i> DOI: 10.1186/s12911-022-01992-6</p>
-                <p class="description">Developed and validated homogeneous ensemble models for predicting anemia severity in routine antenatal screening, contributing to maternal healthcare improvement.</p>
-                <div class="publication-links">
-                    <a href="https://doi.org/10.1186/s12911-022-01992-6" target="_blank" class="btn btn-primary">View Paper</a>
-                </div>
-            </div>
-
-            <!-- Paper 9 -->
-            <div class="publication-card">
-                <h3>Predicting perinatal mortality based on maternal health status and health insurance service using homogeneous ensemble machine learning methods</h3>
-                <p class="authors">Authors: Bogale DS, Abuhay TM, <span>Dejene BE</span>.</p>
-                <p class="conference"><i class="fas fa-book-open"></i> BMC Medical Informatics and Decision Making &bull; 2022; 22(1):341</p>
-                <p class="citation"><i class="fas fa-link"></i> DOI: 10.1186/s12911-022-02084-1</p>
-                <p class="description">Pioneered machine learning risk prediction for perinatal mortality based on maternal health records and community health insurance coverage in Ethiopia.</p>
-                <div class="publication-links">
-                    <a href="https://doi.org/10.1186/s12911-022-02084-1" target="_blank" class="btn btn-primary">View Paper</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Leadership Section (Table Layout) -->
-    <section id="leadership" class="leadership">
-        <h2 class="section-title">Leadership</h2>
-        <div class="experience-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Role</th>
-                        <th>Organization</th>
-                        <th>Period</th>
-                        <th>Key Responsibilities</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>AI & Machine Learning Lead (Co-Investigator)</strong></td>
-                        <td>March of Dimes Discovery Research Grant</td>
-                        <td>2024 - Present</td>
-                        <td>
-                            <ul>
-                                <li>Directing the AI research component and dynamic risk stratification architecture for the preterm birth randomized clinical trial</li>
-                                <li>Supervising model validation and clinical safety auditing across healthcare facilities</li>
-                                <li>Leading technical synchronization between medical clinicians and data engineering teams</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Research Fellow & Data Analytics Lead</strong></td>
-                        <td>Data Science Without Borders (AHRI / APHRC)</td>
-                        <td>2025 - Present</td>
-                        <td>
-                            <ul>
-                                <li>Representing AHRI in regional research workshops and international scientific meetings</li>
-                                <li>Mentoring junior research assistants in statistical computing and machine learning workflows</li>
-                                <li>Leading data standardization and OMOP-CDM mapping initiatives</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Academic Committee Member & Course Chair</strong></td>
-                        <td>University of Gondar, College of Informatics</td>
-                        <td>2019 - Present</td>
-                        <td>
-                            <ul>
-                                <li>Serving on department curriculum revision and academic quality assurance committees</li>
-                                <li>Organizing faculty technology seminars, hackathons, and research development workshops</li>
-                                <li>Mentoring undergraduate students in artificial intelligence projects and capstone research</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Scientific Contributor & Presenter</strong></td>
-                        <td>Deep Learning Indaba & Black in AI @ NeurIPS</td>
-                        <td>2023 - Present</td>
-                        <td>
-                            <ul>
-                                <li>Active participation in pan-African AI capacity building and diversity initiatives</li>
-                                <li>Presenting research findings on explainable AI in maternal health and infectious diseases</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-            <!-- Project 1: ARTist -->
-            <div class="project-card">
-                <h3>ARTist: AI-Driven Antiretroviral Therapy Clinical Decision Support & Bilingual RAG Platform</h3>
-                <div class="project-content">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80" alt="ARTist Clinical AI Platform">
-                    </div>
-                    <div class="project-info">
-                        <p>Developed an enterprise-grade, guideline-grounded clinical decision intelligence platform for HIV/ART care pathways. Features calibrated machine learning for treatment failure risk estimation, care-cascade longitudinal monitoring, and a bilingual (English and Amharic) RAG assistant powered by Google Gemini 2.0 and ChromaDB referencing Ethiopian and WHO guidelines.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>React 18</span>
-                            <span>Tailwind CSS</span>
-                            <span>ChromaDB</span>
-                            <span>Gemini 2.0</span>
-                            <span>PostgreSQL</span>
-                            <span>Scikit-Learn</span>
-                            <span>Docker</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/belzman/ARTist" target="_blank" class="btn btn-primary">View Project / Code</a>
-                        </div>
+                        <p>Advanced Generative Models, Vector Embeddings & RAG Architectures</p>
+                        <a href="https://github.com/belzman" target="_blank" class="certificate-link">View Full Certificate &rarr;</a>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Project 2: ClimAI-Africa -->
-            <div class="project-card">
-                <h3>ClimAI-Africa: Climate-Respiratory Disease Forecasting & Geospatial Warning Platform</h3>
-                <div class="project-content">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1534088568595-a066f410bcda?auto=format&fit=crop&w=800&q=80" alt="ClimAI-Africa">
+        <!-- Contact Section (Tab) -->
+        <section id="contact" class="tab-content contact">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="sender-name">Your Name</label>
+                        <input type="text" id="sender-name" placeholder="Enter your full name" required>
                     </div>
-                    <div class="project-info">
-                        <p>A machine learning platform integrating meteorological satellite variables (temperature, humidity, rainfall) and atmospheric particulate data with hospital respiratory admissions to forecast seasonal disease surges across African sub-regions.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>PyTorch</span>
-                            <span>GeoPandas</span>
-                            <span>XGBoost</span>
-                            <span>Streamlit</span>
-                            <span>FastAPI</span>
-                            <span>Scikit-Learn</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/belzman/ClimAI-Africa" target="_blank" class="btn btn-primary">View Project / Code</a>
-                        </div>
+                    <div class="form-group">
+                        <label for="sender-email">Your Email</label>
+                        <input type="email" id="sender-email" placeholder="Enter your email address" required>
                     </div>
-                </div>
-            </div>
-
-            <!-- Project 3: Preterm Birth Risk Stratifier -->
-            <div class="project-card">
-                <h3>Spontaneous Preterm Birth Dynamic Risk Stratification System</h3>
-                <div class="project-content">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80" alt="Preterm Birth Risk Stratifier">
+                    <div class="form-group">
+                        <label for="sender-subject">Subject</label>
+                        <input type="text" id="sender-subject" placeholder="Inquiry / Collaboration / Speaking" required>
                     </div>
-                    <div class="project-info">
-                        <p>Developed under the March of Dimes Discovery Research Grant. Deploys homogeneous ensemble machine learning to model maternal demographic, nutritional, and clinical markers, delivering risk-responsive antenatal care pathways into routine health center workflows.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Ensemble ML</span>
-                            <span>Explainable AI (SHAP)</span>
-                            <span>PostgreSQL</span>
-                            <span>FastAPI</span>
-                            <span>Maternal Health</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/belzman/My_portifolio" target="_blank" class="btn btn-primary">View Project / Code</a>
-                        </div>
+                    <div class="form-group">
+                        <label for="sender-message">Message</label>
+                        <textarea id="sender-message" placeholder="Write your message here..." required></textarea>
                     </div>
-                </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.75rem;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div id="form-status" style="display: none; text-align: center; margin-top: 10px;"></div>
+                </form>
             </div>
-
-            <!-- Project 4: Clinical Trial Audit System -->
-            <div class="project-card">
-                <h3>Clinical Trial Intelligent Quality Audit & Data Assurance System</h3>
-                <div class="project-content">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Clinical Trial Audit System">
-                    </div>
-                    <div class="project-info">
-                        <p>Automated reconciliation, data anomaly detection, and protocol compliance audit system designed for multi-center epidemiological and clinical trials across healthcare institutions in Africa.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Pandas</span>
-                            <span>PostgreSQL</span>
-                            <span>React</span>
-                            <span>Docker</span>
-                            <span>Clinical QA</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/belzman/clinical-trial-audit-system" target="_blank" class="btn btn-primary">View Project / Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 5: OMOP-CDM -->
-            <div class="project-card">
-                <h3>OMOP-CDM Health Data Standardization & OHDSI Pipeline</h3>
-                <div class="project-content">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80" alt="OMOP-CDM Standardization">
-                    </div>
-                    <div class="project-info">
-                        <p>Standardization pipeline converting Ethiopian electronic health records and demographic surveillance datasets into the international OMOP Common Data Model (OHDSI) for multi-site federated clinical research.</p>
-                        <div class="project-tags">
-                            <span>SQL</span>
-                            <span>WhiteRabbit</span>
-                            <span>PostgreSQL</span>
-                            <span>OMOP CDM v5.4</span>
-                            <span>ETL</span>
-                            <span>OHDSI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/belzman/OMOP" target="_blank" class="btn btn-primary">View Project / Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificates Section -->
-    <section id="certificates" class="certificates">
-        <h2 class="section-title">Certificates</h2>
-        <div class="certificates-grid">
-            <div class="certificate-card">
-                <div class="certificate-icon"><i class="fas fa-award"></i></div>
-                <div class="certificate-info">
-                    <h3>Deep Learning Indaba</h3>
-                    <p>Certificate of Recognition for Pan-African AI & Healthcare Research (2023)</p>
-                    <a href="https://github.com/belzman" target="_blank" class="certificate-link">View Full Certificate &rarr;</a>
-                </div>
-            </div>
-
-            <div class="certificate-card">
-                <div class="certificate-icon"><i class="fas fa-network-wired"></i></div>
-                <div class="certificate-info">
-                    <h3>Black in AI @ NeurIPS</h3>
-                    <p>Participation & Research Presentation in Global Machine Learning Co-located Workshop</p>
-                    <a href="https://github.com/belzman" target="_blank" class="certificate-link">View Full Certificate &rarr;</a>
-                </div>
-            </div>
-
-            <div class="certificate-card">
-                <div class="certificate-icon"><i class="fas fa-brain"></i></div>
-                <div class="certificate-info">
-                    <h3>Artificial Intelligence & ML</h3>
-                    <p>Advanced AI and Deep Learning Specialization — IBM & Columbia University</p>
-                    <a href="https://github.com/belzman" target="_blank" class="certificate-link">View Full Certificate &rarr;</a>
-                </div>
-            </div>
-
-            <div class="certificate-card">
-                <div class="certificate-icon"><i class="fas fa-globe-africa"></i></div>
-                <div class="certificate-info">
-                    <h3>Data Science Africa (DSA)</h3>
-                    <p>Advanced Computational Data Science, Bayesian Modeling & IoT Summer School</p>
-                    <a href="https://github.com/belzman" target="_blank" class="certificate-link">View Full Certificate &rarr;</a>
-                </div>
-            </div>
-
-            <div class="certificate-card">
-                <div class="certificate-icon"><i class="fas fa-shield-alt"></i></div>
-                <div class="certificate-info">
-                    <h3>Antimicrobial Drug Resistance AI</h3>
-                    <p>Data Science Network & DSWB AMR Taskforce Machine Learning Certification</p>
-                    <a href="https://github.com/belzman" target="_blank" class="certificate-link">View Full Certificate &rarr;</a>
-                </div>
-            </div>
-
-            <div class="certificate-card">
-                <div class="certificate-icon"><i class="fas fa-robot"></i></div>
-                <div class="certificate-info">
-                    <h3>Generative AI & LLMs</h3>
-                    <p>Advanced Generative Models, Vector Embeddings & RAG Architectures</p>
-                    <a href="https://github.com/belzman" target="_blank" class="certificate-link">View Full Certificate &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-container">
-            <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <label for="sender-name">Your Name</label>
-                    <input type="text" id="sender-name" placeholder="Enter your full name" required>
-                </div>
-                <div class="form-group">
-                    <label for="sender-email">Your Email</label>
-                    <input type="email" id="sender-email" placeholder="Enter your email address" required>
-                </div>
-                <div class="form-group">
-                    <label for="sender-subject">Subject</label>
-                    <input type="text" id="sender-subject" placeholder="Inquiry / Collaboration / Speaking" required>
-                </div>
-                <div class="form-group">
-                    <label for="sender-message">Message</label>
-                    <textarea id="sender-message" placeholder="Write your message here..." required></textarea>
-                </div>
-                
-                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.75rem;">
-                    <i class="fas fa-paper-plane"></i> Send Message
-                </button>
-                <div id="form-status" style="display: none; text-align: center; margin-top: 10px;"></div>
-            </form>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
