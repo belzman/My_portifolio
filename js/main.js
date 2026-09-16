@@ -1,19 +1,49 @@
 /**
- * Main Controller: Theme Switching, Navigation, Stat Counters, Active Scrollspy
- * Belayneh Endalamaw Dejene
+ * Belayneh Endalamaw Dejene Portfolio Scripts
  */
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Dark/Light Theme Switching
-  const themeToggleBtn = document.getElementById('theme-toggle-btn');
-  const currentTheme = localStorage.getItem('theme') || 'dark';
+  // 1. Mobile Menu Toggle
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
 
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  }
+
+  // 2. Expandable About Section (See More / See Less)
+  const readMoreBtn = document.getElementById('read-more-btn');
+  const expandableContent = document.getElementById('expandable-content');
+
+  if (readMoreBtn && expandableContent) {
+    readMoreBtn.addEventListener('click', () => {
+      if (expandableContent.style.display === 'block') {
+        expandableContent.style.display = 'none';
+        readMoreBtn.textContent = 'See More';
+      } else {
+        expandableContent.style.display = 'block';
+        readMoreBtn.textContent = 'See Less';
+      }
+    });
+  }
+
+  // 3. Dark/Light Theme Toggle
+  const themeBtn = document.getElementById('theme-toggle-btn');
+  const currentTheme = localStorage.getItem('theme') || 'light';
   document.documentElement.setAttribute('data-theme', currentTheme);
   updateThemeIcon(currentTheme);
 
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', () => {
+  if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
       const activeTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = activeTheme === 'light' ? 'dark' : 'light';
+      const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
       updateThemeIcon(newTheme);
@@ -21,133 +51,72 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateThemeIcon(theme) {
-    if (!themeToggleBtn) return;
-    if (theme === 'light') {
-      themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
-      themeToggleBtn.setAttribute('title', 'Switch to Dark Mode');
-    } else {
-      themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
-      themeToggleBtn.setAttribute('title', 'Switch to Light Mode');
-    }
+    if (!themeBtn) return;
+    themeBtn.innerHTML = theme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
   }
 
-  // 2. Mobile Menu Toggle
-  const hamburger = document.getElementById('hamburger-btn');
-  const navMenu = document.getElementById('nav-menu');
-
-  if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-
-    navMenu.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-      });
-    });
-  }
-
-  // 3. Navbar scroll styling
-  const navbar = document.querySelector('.navbar');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  });
-
-  // 4. Typing Animation for Hero Subtitle
+  // 4. Typing Animation in Hero
   const phrases = [
     "Data Scientist & AI Researcher",
     "PhD Candidate in Data Science",
-    "Clinical Decision Support & Explainable AI (XAI)",
-    "Co-Investigator, March of Dimes Grant",
+    "Clinical Decision Support & Explainable AI Specialist",
+    "Co-Investigator, March of Dimes Research Grant",
     "Research Fellow @ Armauer Hansen Research Institute"
   ];
 
-  const typingEl = document.getElementById('hero-typed-text');
-  if (typingEl) {
-    let pIdx = 0;
-    let cIdx = 0;
-    let isDeleting = false;
-
-    function typeLoop() {
-      const currentPhrase = phrases[pIdx];
+  const typedEl = document.getElementById('typed-text');
+  if (typedEl) {
+    let pIdx = 0, cIdx = 0, isDeleting = false;
+    function typeEffect() {
+      const curr = phrases[pIdx];
       if (isDeleting) {
-        typingEl.textContent = currentPhrase.substring(0, cIdx - 1);
+        typedEl.textContent = curr.substring(0, cIdx - 1);
         cIdx--;
       } else {
-        typingEl.textContent = currentPhrase.substring(0, cIdx + 1);
+        typedEl.textContent = curr.substring(0, cIdx + 1);
         cIdx++;
       }
 
       let speed = isDeleting ? 30 : 60;
-
-      if (!isDeleting && cIdx === currentPhrase.length) {
-        speed = 2000;
+      if (!isDeleting && cIdx === curr.length) {
+        speed = 2200;
         isDeleting = true;
       } else if (isDeleting && cIdx === 0) {
         isDeleting = false;
         pIdx = (pIdx + 1) % phrases.length;
         speed = 400;
       }
-
-      setTimeout(typeLoop, speed);
+      setTimeout(typeEffect, speed);
     }
-    typeLoop();
+    typeEffect();
   }
 
-  // 5. Stat Counter Animation
-  const statCounters = document.querySelectorAll('.stat-counter');
-  let animated = false;
+  // 5. Contact Form Handler
+  const contactForm = document.getElementById('contact-form');
+  const formMsg = document.getElementById('form-status');
 
-  function runCounters() {
-    statCounters.forEach(counter => {
-      const target = +counter.getAttribute('data-target');
-      const suffix = counter.getAttribute('data-suffix') || '';
-      let count = 0;
-      const step = Math.ceil(target / 40);
-      const timer = setInterval(() => {
-        count += step;
-        if (count >= target) {
-          counter.textContent = target + suffix;
-          clearInterval(timer);
-        } else {
-          counter.textContent = count + suffix;
-        }
-      }, 35);
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('sender-name').value.trim();
+      const email = document.getElementById('sender-email').value.trim();
+      const subject = document.getElementById('sender-subject').value.trim();
+      const message = document.getElementById('sender-message').value.trim();
+
+      const mailtoUrl = `mailto:belzman2011@gmail.com,Belaynehendalamaw2008@gmail.com?subject=${encodeURIComponent('[Portfolio Message] ' + subject)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message)}`;
+
+      if (formMsg) {
+        formMsg.style.display = 'block';
+        formMsg.style.padding = '12px';
+        formMsg.style.borderRadius = '8px';
+        formMsg.style.backgroundColor = '#d4edda';
+        formMsg.style.color = '#155724';
+        formMsg.textContent = 'Opening your email client to send message to Belayneh...';
+      }
+
+      setTimeout(() => {
+        window.location.href = mailtoUrl;
+      }, 600);
     });
   }
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !animated) {
-        runCounters();
-        animated = true;
-      }
-    });
-  }, { threshold: 0.4 });
-
-  const statsSection = document.getElementById('stats-banner');
-  if (statsSection) observer.observe(statsSection);
-
-  // 6. Active Nav Link Scrollspy
-  const sections = document.querySelectorAll('section[id]');
-  window.addEventListener('scroll', () => {
-    let scrollY = window.pageYOffset;
-    sections.forEach(current => {
-      const sectionHeight = current.offsetHeight;
-      const sectionTop = current.offsetTop - 120;
-      const sectionId = current.getAttribute('id');
-      const navItem = document.querySelector(`.nav-link[href*="${sectionId}"]`);
-      if (navItem) {
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          navItem.classList.add('active');
-        } else {
-          navItem.classList.remove('active');
-        }
-      }
-    });
-  });
-});\n
+});
